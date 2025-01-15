@@ -1,0 +1,80 @@
+[1] "Narrow Int Familiar AllDaysCombined"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ PosBin + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: 8945.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.2455 -0.4942 -0.0023  0.4676  6.5407 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 1697     41.19   
+ AnimalID        (Intercept) 2770     52.63   
+ Residual                    4563     67.55   
+Number of obs: 806, groups:  CellID:AnimalID, 27; AnimalID, 4
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)  
+(Intercept) -17.53262   30.45987   3.29326  -0.576   0.6019  
+PosBin2       0.83850   17.15824 754.31825   0.049   0.9610  
+PosBin3       0.04332   17.15824 754.31825   0.003   0.9980  
+PosBin4      -1.51224   17.15824 754.31825  -0.088   0.9298  
+PosBin5      -3.13958   17.15824 754.31825  -0.183   0.8549  
+PosBin6      -3.17377   17.15824 754.31825  -0.185   0.8533  
+PosBin7      -1.32687   17.15824 754.31825  -0.077   0.9384  
+PosBin8       0.04186   17.15824 754.31825   0.002   0.9981  
+PosBin9      -4.76850   17.15824 754.31825  -0.278   0.7812  
+PosBin10    -12.16028   17.15824 754.31825  -0.709   0.4787  
+PosBin11    -20.28496   17.15824 754.31825  -1.182   0.2375  
+PosBin12    -26.05321   17.15824 754.31825  -1.518   0.1293  
+PosBin13    -29.06525   17.15824 754.31825  -1.694   0.0907 .
+PosBin14    -26.91826   17.15824 754.31825  -1.569   0.1171  
+PosBin15    -20.97216   17.15824 754.31825  -1.222   0.2220  
+PosBin16    -12.74853   17.15824 754.31825  -0.743   0.4577  
+PosBin17     -4.60622   17.15824 754.31825  -0.268   0.7884  
+PosBin18     -0.26015   17.15824 754.31825  -0.015   0.9879  
+PosBin19     -1.24474   17.15824 754.31825  -0.073   0.9422  
+PosBin20     -8.19226   17.15824 754.31825  -0.477   0.6332  
+PosBin21    -15.96078   17.15824 754.31825  -0.930   0.3526  
+PosBin22    -21.72121   17.15824 754.31825  -1.266   0.2059  
+PosBin23    -23.89644   17.15824 754.31825  -1.393   0.1641  
+PosBin24    -22.45598   17.15824 754.31825  -1.309   0.1910  
+PosBin25    -18.23477   17.15824 754.31825  -1.063   0.2882  
+PosBin26    -13.12517   17.15824 754.31825  -0.765   0.4445  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Type III Analysis of Variance Table with Satterthwaite's method
+       Sum Sq Mean Sq NumDF  DenDF F value Pr(>F)
+PosBin  80575    3223    25 754.32  0.7063 0.8541
+ contrast           estimate   SE  df t.ratio p.value
+ PosBin2 - PosBin1    0.8385 17.2 754   0.049  1.0000
+ PosBin3 - PosBin1    0.0433 17.2 754   0.003  1.0000
+ PosBin4 - PosBin1   -1.5122 17.2 754  -0.088  1.0000
+ PosBin5 - PosBin1   -3.1396 17.2 754  -0.183  1.0000
+ PosBin6 - PosBin1   -3.1738 17.2 754  -0.185  1.0000
+ PosBin7 - PosBin1   -1.3269 17.2 754  -0.077  1.0000
+ PosBin8 - PosBin1    0.0419 17.2 754   0.002  1.0000
+ PosBin9 - PosBin1   -4.7685 17.2 754  -0.278  1.0000
+ PosBin10 - PosBin1 -12.1603 17.2 754  -0.709  1.0000
+ PosBin11 - PosBin1 -20.2850 17.2 754  -1.182  0.9989
+ PosBin12 - PosBin1 -26.0532 17.2 754  -1.518  0.9686
+ PosBin13 - PosBin1 -29.0653 17.2 754  -1.694  0.9071
+ PosBin14 - PosBin1 -26.9183 17.2 754  -1.569  0.9556
+ PosBin15 - PosBin1 -20.9722 17.2 754  -1.222  0.9981
+ PosBin16 - PosBin1 -12.7485 17.2 754  -0.743  1.0000
+ PosBin17 - PosBin1  -4.6062 17.2 754  -0.268  1.0000
+ PosBin18 - PosBin1  -0.2601 17.2 754  -0.015  1.0000
+ PosBin19 - PosBin1  -1.2447 17.2 754  -0.073  1.0000
+ PosBin20 - PosBin1  -8.1923 17.2 754  -0.477  1.0000
+ PosBin21 - PosBin1 -15.9608 17.2 754  -0.930  1.0000
+ PosBin22 - PosBin1 -21.7212 17.2 754  -1.266  0.9969
+ PosBin23 - PosBin1 -23.8964 17.2 754  -1.393  0.9887
+ PosBin24 - PosBin1 -22.4560 17.2 754  -1.309  0.9950
+ PosBin25 - PosBin1 -18.2348 17.2 754  -1.063  0.9998
+ PosBin26 - PosBin1 -13.1252 17.2 754  -0.765  1.0000
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: sidak method for 25 tests 

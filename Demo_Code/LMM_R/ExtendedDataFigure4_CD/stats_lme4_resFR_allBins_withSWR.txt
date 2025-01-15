@@ -1,0 +1,160 @@
+[1] "NarrowInt Familiar AllDaysCombined"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ PosBin + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: 111731
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8555 -0.6726 -0.0829  0.6329  3.6244 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 723.74   26.902  
+ AnimalID        (Intercept)  93.72    9.681  
+ Residual                    674.16   25.965  
+Number of obs: 11895, groups:  CellID:AnimalID, 178; AnimalID, 7
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept) -2.042e-01  4.608e+00  8.755e+00  -0.044 0.965653    
+PosBin2      7.456e-01  2.714e+00  1.165e+04   0.275 0.783558    
+PosBin3      1.126e+00  2.714e+00  1.165e+04   0.415 0.678212    
+PosBin4      1.113e+00  2.714e+00  1.165e+04   0.410 0.681834    
+PosBin5      6.899e-01  2.714e+00  1.165e+04   0.254 0.799385    
+PosBin6     -2.227e-01  2.714e+00  1.165e+04  -0.082 0.934609    
+PosBin7     -7.575e-01  2.714e+00  1.165e+04  -0.279 0.780205    
+PosBin8     -6.610e-01  2.714e+00  1.165e+04  -0.244 0.807619    
+PosBin9     -8.628e-02  2.714e+00  1.165e+04  -0.032 0.974644    
+PosBin10     5.498e-01  2.714e+00  1.165e+04   0.203 0.839490    
+PosBin11     1.076e+00  2.714e+00  1.165e+04   0.396 0.691816    
+PosBin12     1.366e+00  2.714e+00  1.165e+04   0.503 0.614887    
+PosBin13     1.348e+00  2.714e+00  1.165e+04   0.497 0.619369    
+PosBin14     7.105e-01  2.714e+00  1.165e+04   0.262 0.793520    
+PosBin15    -4.088e-01  2.714e+00  1.165e+04  -0.151 0.880279    
+PosBin16    -1.673e+00  2.714e+00  1.165e+04  -0.616 0.537660    
+PosBin17    -2.818e+00  2.714e+00  1.165e+04  -1.038 0.299273    
+PosBin18    -3.414e+00  2.714e+00  1.165e+04  -1.258 0.208489    
+PosBin19    -3.693e+00  2.714e+00  1.165e+04  -1.360 0.173727    
+PosBin20    -4.072e+00  2.714e+00  1.165e+04  -1.500 0.133598    
+PosBin21    -4.628e+00  2.714e+00  1.165e+04  -1.705 0.088216 .  
+PosBin22    -5.364e+00  2.714e+00  1.165e+04  -1.976 0.048168 *  
+PosBin23    -6.168e+00  2.714e+00  1.165e+04  -2.272 0.023077 *  
+PosBin24    -7.031e+00  2.714e+00  1.165e+04  -2.590 0.009600 ** 
+PosBin25    -8.338e+00  2.714e+00  1.165e+04  -3.072 0.002134 ** 
+PosBin26    -1.025e+01  2.714e+00  1.165e+04  -3.777 0.000160 ***
+PosBin27    -1.306e+01  2.714e+00  1.165e+04  -4.810 1.53e-06 ***
+PosBin28    -1.417e+01  2.714e+00  1.165e+04  -5.220 1.82e-07 ***
+PosBin29    -1.371e+01  2.714e+00  1.165e+04  -5.052 4.43e-07 ***
+PosBin30    -1.193e+01  2.714e+00  1.165e+04  -4.397 1.11e-05 ***
+PosBin31    -1.072e+01  2.714e+00  1.165e+04  -3.951 7.83e-05 ***
+PosBin32    -9.297e+00  2.714e+00  1.165e+04  -3.425 0.000617 ***
+PosBin33    -8.538e+00  2.714e+00  1.165e+04  -3.145 0.001663 ** 
+PosBin34    -8.082e+00  2.714e+00  1.165e+04  -2.977 0.002912 ** 
+PosBin35    -7.227e+00  2.714e+00  1.165e+04  -2.662 0.007767 ** 
+PosBin36    -5.381e+00  2.714e+00  1.165e+04  -1.983 0.047446 *  
+PosBin37    -1.470e+00  2.714e+00  1.165e+04  -0.542 0.588022    
+PosBin38     2.027e+00  2.714e+00  1.165e+04   0.747 0.455225    
+PosBin39     3.648e+00  2.714e+00  1.165e+04   1.344 0.178992    
+PosBin40     4.089e+00  2.714e+00  1.165e+04   1.506 0.131975    
+PosBin41     4.397e+00  2.714e+00  1.165e+04   1.620 0.105303    
+PosBin42     3.837e+00  2.714e+00  1.165e+04   1.414 0.157484    
+PosBin43     3.135e+00  2.714e+00  1.165e+04   1.155 0.248146    
+PosBin44     2.360e+00  2.714e+00  1.165e+04   0.869 0.384641    
+PosBin45     1.917e+00  2.714e+00  1.165e+04   0.706 0.479969    
+PosBin46     2.017e+00  2.714e+00  1.165e+04   0.743 0.457426    
+PosBin47     2.531e+00  2.714e+00  1.165e+04   0.932 0.351199    
+PosBin48     3.134e+00  2.714e+00  1.165e+04   1.155 0.248232    
+PosBin49     3.511e+00  2.714e+00  1.165e+04   1.293 0.195904    
+PosBin50     3.437e+00  2.714e+00  1.165e+04   1.266 0.205456    
+PosBin51     2.985e+00  2.714e+00  1.165e+04   1.100 0.271448    
+PosBin52     1.978e+00  2.714e+00  1.165e+04   0.729 0.466163    
+PosBin53     8.450e-01  2.714e+00  1.165e+04   0.311 0.755562    
+PosBin54    -3.108e-01  2.714e+00  1.165e+04  -0.115 0.908838    
+PosBin55    -1.525e+00  2.714e+00  1.165e+04  -0.562 0.574285    
+PosBin56    -2.715e+00  2.714e+00  1.165e+04  -1.000 0.317191    
+PosBin57    -3.821e+00  2.714e+00  1.165e+04  -1.408 0.159250    
+PosBin58    -4.767e+00  2.714e+00  1.165e+04  -1.756 0.079087 .  
+PosBin59    -5.269e+00  2.714e+00  1.165e+04  -1.941 0.052259 .  
+PosBin60    -5.264e+00  2.714e+00  1.165e+04  -1.939 0.052478 .  
+PosBin61    -4.895e+00  2.714e+00  1.165e+04  -1.803 0.071374 .  
+PosBin62    -4.658e+00  2.714e+00  1.165e+04  -1.716 0.086194 .  
+PosBin63    -5.009e+00  2.714e+00  1.165e+04  -1.845 0.065024 .  
+PosBin64    -5.852e+00  2.714e+00  1.165e+04  -2.156 0.031099 *  
+PosBin65    -6.854e+00  2.714e+00  1.165e+04  -2.525 0.011587 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Type III Analysis of Variance Table with Satterthwaite's method
+       Sum Sq Mean Sq NumDF DenDF F value    Pr(>F)    
+PosBin 276012  4312.7    64 11653  6.3971 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast           estimate   SE  df z.ratio p.value
+ PosBin2 - PosBin1    0.7456 2.71 Inf   0.275  1.0000
+ PosBin3 - PosBin1    1.1262 2.71 Inf   0.415  1.0000
+ PosBin4 - PosBin1    1.1128 2.71 Inf   0.410  1.0000
+ PosBin5 - PosBin1    0.6899 2.71 Inf   0.254  1.0000
+ PosBin6 - PosBin1   -0.2227 2.71 Inf  -0.082  1.0000
+ PosBin7 - PosBin1   -0.7575 2.71 Inf  -0.279  1.0000
+ PosBin8 - PosBin1   -0.6610 2.71 Inf  -0.244  1.0000
+ PosBin9 - PosBin1   -0.0863 2.71 Inf  -0.032  1.0000
+ PosBin10 - PosBin1   0.5498 2.71 Inf   0.203  1.0000
+ PosBin11 - PosBin1   1.0760 2.71 Inf   0.396  1.0000
+ PosBin12 - PosBin1   1.3657 2.71 Inf   0.503  1.0000
+ PosBin13 - PosBin1   1.3484 2.71 Inf   0.497  1.0000
+ PosBin14 - PosBin1   0.7105 2.71 Inf   0.262  1.0000
+ PosBin15 - PosBin1  -0.4088 2.71 Inf  -0.151  1.0000
+ PosBin16 - PosBin1  -1.6731 2.71 Inf  -0.616  1.0000
+ PosBin17 - PosBin1  -2.8176 2.71 Inf  -1.038  1.0000
+ PosBin18 - PosBin1  -3.4142 2.71 Inf  -1.258  1.0000
+ PosBin19 - PosBin1  -3.6927 2.71 Inf  -1.360  1.0000
+ PosBin20 - PosBin1  -4.0720 2.71 Inf  -1.500  0.9999
+ PosBin21 - PosBin1  -4.6281 2.71 Inf  -1.705  0.9973
+ PosBin22 - PosBin1  -5.3639 2.71 Inf  -1.976  0.9575
+ PosBin23 - PosBin1  -6.1683 2.71 Inf  -2.272  0.7753
+ PosBin24 - PosBin1  -7.0312 2.71 Inf  -2.590  0.4602
+ PosBin25 - PosBin1  -8.3377 2.71 Inf  -3.072  0.1275
+ PosBin26 - PosBin1 -10.2514 2.71 Inf  -3.777  0.0101
+ PosBin27 - PosBin1 -13.0571 2.71 Inf  -4.810  0.0001
+ PosBin28 - PosBin1 -14.1694 2.71 Inf  -5.220  <.0001
+ PosBin29 - PosBin1 -13.7138 2.71 Inf  -5.052  <.0001
+ PosBin30 - PosBin1 -11.9342 2.71 Inf  -4.397  0.0007
+ PosBin31 - PosBin1 -10.7248 2.71 Inf  -3.951  0.0050
+ PosBin32 - PosBin1  -9.2968 2.71 Inf  -3.425  0.0386
+ PosBin33 - PosBin1  -8.5378 2.71 Inf  -3.145  0.1008
+ PosBin34 - PosBin1  -8.0820 2.71 Inf  -2.977  0.1700
+ PosBin35 - PosBin1  -7.2270 2.71 Inf  -2.662  0.3925
+ PosBin36 - PosBin1  -5.3813 2.71 Inf  -1.983  0.9554
+ PosBin37 - PosBin1  -1.4704 2.71 Inf  -0.542  1.0000
+ PosBin38 - PosBin1   2.0270 2.71 Inf   0.747  1.0000
+ PosBin39 - PosBin1   3.6480 2.71 Inf   1.344  1.0000
+ PosBin40 - PosBin1   4.0891 2.71 Inf   1.506  0.9999
+ PosBin41 - PosBin1   4.3968 2.71 Inf   1.620  0.9992
+ PosBin42 - PosBin1   3.8373 2.71 Inf   1.414  1.0000
+ PosBin43 - PosBin1   3.1349 2.71 Inf   1.155  1.0000
+ PosBin44 - PosBin1   2.3599 2.71 Inf   0.869  1.0000
+ PosBin45 - PosBin1   1.9174 2.71 Inf   0.706  1.0000
+ PosBin46 - PosBin1   2.0171 2.71 Inf   0.743  1.0000
+ PosBin47 - PosBin1   2.5306 2.71 Inf   0.932  1.0000
+ PosBin48 - PosBin1   3.1343 2.71 Inf   1.155  1.0000
+ PosBin49 - PosBin1   3.5107 2.71 Inf   1.293  1.0000
+ PosBin50 - PosBin1   3.4370 2.71 Inf   1.266  1.0000
+ PosBin51 - PosBin1   2.9852 2.71 Inf   1.100  1.0000
+ PosBin52 - PosBin1   1.9781 2.71 Inf   0.729  1.0000
+ PosBin53 - PosBin1   0.8450 2.71 Inf   0.311  1.0000
+ PosBin54 - PosBin1  -0.3108 2.71 Inf  -0.115  1.0000
+ PosBin55 - PosBin1  -1.5249 2.71 Inf  -0.562  1.0000
+ PosBin56 - PosBin1  -2.7152 2.71 Inf  -1.000  1.0000
+ PosBin57 - PosBin1  -3.8210 2.71 Inf  -1.408  1.0000
+ PosBin58 - PosBin1  -4.7669 2.71 Inf  -1.756  0.9949
+ PosBin59 - PosBin1  -5.2691 2.71 Inf  -1.941  0.9677
+ PosBin60 - PosBin1  -5.2643 2.71 Inf  -1.939  0.9682
+ PosBin61 - PosBin1  -4.8947 2.71 Inf  -1.803  0.9912
+ PosBin62 - PosBin1  -4.6578 2.71 Inf  -1.716  0.9969
+ PosBin63 - PosBin1  -5.0088 2.71 Inf  -1.845  0.9864
+ PosBin64 - PosBin1  -5.8524 2.71 Inf  -2.156  0.8674
+ PosBin65 - PosBin1  -6.8535 2.71 Inf  -2.525  0.5253
+
+Degrees-of-freedom method: asymptotic 
+P value adjustment: sidak method for 64 tests 

@@ -1,0 +1,153 @@
+[1] "PVxAi32 - uing all trials, fam only - Speed"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ TrialT + (1 | AnimalID)
+   Data: pv
+
+REML criterion at convergence: -60.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.7928 -0.2906  0.1416  0.2930  2.2885 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.003432 0.05858 
+ Residual             0.002392 0.04891 
+Number of obs: 30, groups:  AnimalID, 6
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)     0.902892   0.031155 10.465866  28.981 2.45e-11 ***
+TrialTBothStim  0.022835   0.028239 20.000001   0.809    0.428    
+TrialTHighStim  0.020092   0.028239 20.000001   0.711    0.485    
+TrialTLowStim   0.036155   0.028239 20.000001   1.280    0.215    
+TrialTNoStim    0.003087   0.028239 20.000001   0.109    0.914    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) TrlTBS TrlTHS TrlTLS
+TrilTBthStm -0.453                     
+TrilTHghStm -0.453  0.500              
+TrialTLwStm -0.453  0.500  0.500       
+TrialTNoStm -0.453  0.500  0.500  0.500
+Type III Analysis of Variance Table with Kenward-Roger's method
+         Sum Sq   Mean Sq NumDF DenDF F value Pr(>F)
+TrialT 0.005349 0.0013373     4    20   0.559  0.695
+ contrast             estimate     SE df t.ratio p.value
+ AllTrials - BothStim -0.02284 0.0282 20  -0.809  0.9249
+ AllTrials - HighStim -0.02009 0.0282 20  -0.711  0.9514
+ AllTrials - LowStim  -0.03616 0.0282 20  -1.280  0.7057
+ AllTrials - NoStim   -0.00309 0.0282 20  -0.109  1.0000
+ BothStim - HighStim   0.00274 0.0282 20   0.097  1.0000
+ BothStim - LowStim   -0.01332 0.0282 20  -0.472  0.9891
+ BothStim - NoStim     0.01975 0.0282 20   0.699  0.9543
+ HighStim - LowStim   -0.01606 0.0282 20  -0.569  0.9781
+ HighStim - NoStim     0.01701 0.0282 20   0.602  0.9731
+ LowStim - NoStim      0.03307 0.0282 20   1.171  0.7672
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 5 estimates 
+[1] "PVxAi32 - uing all trials, fam only - Lickrate"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ TrialT + (1 | AnimalID)
+   Data: pv
+
+REML criterion at convergence: -41.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0508 -0.5266 -0.1716  0.3605  2.6081 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.004613 0.06792 
+ Residual             0.005661 0.07524 
+Number of obs: 30, groups:  AnimalID, 6
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)     0.596782   0.041381 13.839145  14.422 9.96e-10 ***
+TrialTBothStim -0.018439   0.043439 20.000000  -0.424    0.676    
+TrialTHighStim -0.023499   0.043439 20.000000  -0.541    0.595    
+TrialTLowStim   0.051664   0.043439 20.000000   1.189    0.248    
+TrialTNoStim    0.003959   0.043439 20.000000   0.091    0.928    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) TrlTBS TrlTHS TrlTLS
+TrilTBthStm -0.525                     
+TrilTHghStm -0.525  0.500              
+TrialTLwStm -0.525  0.500  0.500       
+TrialTNoStm -0.525  0.500  0.500  0.500
+Type III Analysis of Variance Table with Kenward-Roger's method
+         Sum Sq   Mean Sq NumDF DenDF F value Pr(>F)
+TrialT 0.021238 0.0053094     4    20  0.9379 0.4623
+ contrast             estimate     SE df t.ratio p.value
+ AllTrials - BothStim  0.01844 0.0434 20   0.424  0.9927
+ AllTrials - HighStim  0.02350 0.0434 20   0.541  0.9818
+ AllTrials - LowStim  -0.05166 0.0434 20  -1.189  0.7572
+ AllTrials - NoStim   -0.00396 0.0434 20  -0.091  1.0000
+ BothStim - HighStim   0.00506 0.0434 20   0.117  1.0000
+ BothStim - LowStim   -0.07010 0.0434 20  -1.614  0.5061
+ BothStim - NoStim    -0.02240 0.0434 20  -0.516  0.9848
+ HighStim - LowStim   -0.07516 0.0434 20  -1.730  0.4390
+ HighStim - NoStim    -0.02746 0.0434 20  -0.632  0.9680
+ LowStim - NoStim      0.04771 0.0434 20   1.098  0.8054
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 5 estimates 
+[1] "PVxAi32 - uing all trials, fam only - LickLatency"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ TrialT + (1 | AnimalID)
+   Data: pv
+
+REML criterion at convergence: -36.1
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-1.69728 -0.34649  0.00587  0.35037  2.02267 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.005479 0.07402 
+ Residual             0.007024 0.08381 
+Number of obs: 30, groups:  AnimalID, 6
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)     0.730953   0.045649 14.138878  16.012 1.85e-10 ***
+TrialTBothStim -0.039997   0.048387 20.000000  -0.827    0.418    
+TrialTHighStim -0.042462   0.048387 20.000000  -0.878    0.391    
+TrialTLowStim  -0.032968   0.048387 20.000000  -0.681    0.503    
+TrialTNoStim    0.006247   0.048387 20.000000   0.129    0.899    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) TrlTBS TrlTHS TrlTLS
+TrilTBthStm -0.530                     
+TrilTHghStm -0.530  0.500              
+TrialTLwStm -0.530  0.500  0.500       
+TrialTNoStm -0.530  0.500  0.500  0.500
+Type III Analysis of Variance Table with Kenward-Roger's method
+         Sum Sq  Mean Sq NumDF DenDF F value Pr(>F)
+TrialT 0.012868 0.003217     4    20   0.458 0.7656
+ contrast             estimate     SE df t.ratio p.value
+ AllTrials - BothStim  0.04000 0.0484 20   0.827  0.9192
+ AllTrials - HighStim  0.04246 0.0484 20   0.878  0.9018
+ AllTrials - LowStim   0.03297 0.0484 20   0.681  0.9582
+ AllTrials - NoStim   -0.00625 0.0484 20  -0.129  0.9999
+ BothStim - HighStim   0.00247 0.0484 20   0.051  1.0000
+ BothStim - LowStim   -0.00703 0.0484 20  -0.145  0.9999
+ BothStim - NoStim    -0.04624 0.0484 20  -0.956  0.8714
+ HighStim - LowStim   -0.00949 0.0484 20  -0.196  0.9996
+ HighStim - NoStim    -0.04871 0.0484 20  -1.007  0.8493
+ LowStim - NoStim     -0.03922 0.0484 20  -0.810  0.9243
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 5 estimates 

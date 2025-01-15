@@ -1,0 +1,82 @@
+[1] "Narrow Int Familiar AllDaysCombined"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ PosBin + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: 8035.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.4850 -0.4951  0.0260  0.5380  3.6614 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 1845.47  42.959  
+ AnimalID        (Intercept)   14.27   3.777  
+ Residual                    2910.32  53.947  
+Number of obs: 754, groups:  CellID:AnimalID, 27; AnimalID, 4
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)   
+(Intercept) -12.0783    13.1526   7.2463  -0.918  0.38800   
+PosBin2       6.7065    14.1673 701.9451   0.473  0.63609   
+PosBin3      15.9431    14.1673 701.9451   1.125  0.26083   
+PosBin4      26.2782    14.1673 701.9451   1.855  0.06404 . 
+PosBin5      35.5261    14.1673 701.9451   2.508  0.01238 * 
+PosBin6      42.1926    14.1673 701.9451   2.978  0.00300 **
+PosBin7      45.8337    14.1673 701.9451   3.235  0.00127 **
+PosBin8      44.8880    14.1673 701.9451   3.168  0.00160 **
+PosBin9      36.2299    14.1673 701.9451   2.557  0.01076 * 
+PosBin10     24.5259    14.1673 701.9451   1.731  0.08386 . 
+PosBin11      9.3826    14.1673 701.9451   0.662  0.50801   
+PosBin12     -6.5192    14.1673 701.9451  -0.460  0.64554   
+PosBin13    -19.0727    14.1673 701.9451  -1.346  0.17866   
+PosBin14    -23.5504    14.1673 701.9451  -1.662  0.09690 . 
+PosBin15    -19.0136    14.1673 701.9451  -1.342  0.18000   
+PosBin16    -10.7729    14.1673 701.9451  -0.760  0.44727   
+PosBin17     -3.6872    14.1673 701.9451  -0.260  0.79474   
+PosBin18      0.6265    14.1673 701.9451   0.044  0.96474   
+PosBin19      4.1224    14.1673 701.9451   0.291  0.77115   
+PosBin20      8.1324    14.1673 701.9451   0.574  0.56613   
+PosBin21     12.8240    14.1673 701.9451   0.905  0.36568   
+PosBin22     16.5576    14.1673 701.9451   1.169  0.24291   
+PosBin23     18.3409    14.1673 701.9451   1.295  0.19588   
+PosBin24     17.9905    14.1673 701.9451   1.270  0.20455   
+PosBin25     16.0149    14.1673 701.9451   1.130  0.25869   
+PosBin26     13.2930    14.1673 701.9451   0.938  0.34842   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Type III Analysis of Variance Table with Satterthwaite's method
+       Sum Sq Mean Sq NumDF  DenDF F value    Pr(>F)    
+PosBin 274172   10967    25 701.95  3.7683 3.052e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast           estimate   SE  df t.ratio p.value
+ PosBin2 - PosBin1     6.707 14.2 702   0.473  1.0000
+ PosBin3 - PosBin1    15.943 14.2 702   1.125  0.9995
+ PosBin4 - PosBin1    26.278 14.2 702   1.855  0.8088
+ PosBin5 - PosBin1    35.526 14.2 702   2.508  0.2676
+ PosBin6 - PosBin1    42.193 14.2 702   2.978  0.0724
+ PosBin7 - PosBin1    45.834 14.2 702   3.235  0.0313
+ PosBin8 - PosBin1    44.888 14.2 702   3.168  0.0392
+ PosBin9 - PosBin1    36.230 14.2 702   2.557  0.2369
+ PosBin10 - PosBin1   24.526 14.2 702   1.731  0.8880
+ PosBin11 - PosBin1    9.383 14.2 702   0.662  1.0000
+ PosBin12 - PosBin1   -6.519 14.2 702  -0.460  1.0000
+ PosBin13 - PosBin1  -19.073 14.2 702  -1.346  0.9927
+ PosBin14 - PosBin1  -23.550 14.2 702  -1.662  0.9218
+ PosBin15 - PosBin1  -19.014 14.2 702  -1.342  0.9930
+ PosBin16 - PosBin1  -10.773 14.2 702  -0.760  1.0000
+ PosBin17 - PosBin1   -3.687 14.2 702  -0.260  1.0000
+ PosBin18 - PosBin1    0.627 14.2 702   0.044  1.0000
+ PosBin19 - PosBin1    4.122 14.2 702   0.291  1.0000
+ PosBin20 - PosBin1    8.132 14.2 702   0.574  1.0000
+ PosBin21 - PosBin1   12.824 14.2 702   0.905  1.0000
+ PosBin22 - PosBin1   16.558 14.2 702   1.169  0.9990
+ PosBin23 - PosBin1   18.341 14.2 702   1.295  0.9957
+ PosBin24 - PosBin1   17.991 14.2 702   1.270  0.9967
+ PosBin25 - PosBin1   16.015 14.2 702   1.130  0.9994
+ PosBin26 - PosBin1   13.293 14.2 702   0.938  1.0000
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: sidak method for 25 tests 

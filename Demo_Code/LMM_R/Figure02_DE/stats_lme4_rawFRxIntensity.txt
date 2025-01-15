@@ -1,0 +1,419 @@
+[1] "PV - Fam"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_fam_ct
+
+REML criterion at convergence: 1127.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.2090 -0.3346  0.0116  0.2606  4.6833 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept)   0.0     0.00   
+ Residual             145.4    12.06   
+Number of obs: 146, groups:  AnimalID, 10
+
+Fixed effects:
+               Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)      -3.908      1.218 143.000  -3.208  0.00165 ** 
+StimIntensity2    7.387      7.069 143.000   1.045  0.29774    
+StimIntensity3   25.852      2.172 143.000  11.904  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.172       
+StmIntnsty3 -0.561  0.097
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+              Sum Sq Mean Sq NumDF DenDF F value    Pr(>F)    
+StimIntensity  20613   10306     2   143  70.859 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate   SE    df t.ratio p.value
+ StimIntensity1 - StimIntensity2    -7.39 7.18 137.3  -1.029  0.5597
+ StimIntensity1 - StimIntensity3   -25.85 2.34  83.8 -11.038  <.0001
+ StimIntensity2 - StimIntensity3   -18.46 7.42 123.6  -2.487  0.0376
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "PV - Nov"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimCond * StimIntensity + (1 | AnimalID/CellID)
+   Data: pv_nov_ct
+
+REML criterion at convergence: 867
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.1022 -0.3628 -0.0489  0.3592  4.1507 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 111.41   10.555  
+ AnimalID        (Intercept)  31.55    5.617  
+ Residual                    226.05   15.035  
+Number of obs: 105, groups:  CellID:AnimalID, 34; AnimalID, 5
+
+Fixed effects:
+                         Estimate Std. Error     df t value Pr(>|t|)    
+(Intercept)                -1.640      5.028 14.636  -0.326    0.749    
+StimCond3                   3.007      6.540 73.568   0.460    0.647    
+StimIntensity2             20.212      4.878 67.488   4.144 9.74e-05 ***
+StimIntensity3             44.136      4.878 67.488   9.048 2.95e-13 ***
+StimCond3:StimIntensity2   -0.476      7.215 67.488  -0.066    0.948    
+StimCond3:StimIntensity3   -5.724      7.215 67.488  -0.793    0.430    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmCn3 StmIn2 StmIn3 SC3:SI2
+StimCond3   -0.588                             
+StmIntnsty2 -0.485  0.373                      
+StmIntnsty3 -0.485  0.373  0.500               
+StmCnd3:SI2  0.328 -0.552 -0.676 -0.338        
+StmCnd3:SI3  0.328 -0.552 -0.338 -0.676  0.500 
+Type III Analysis of Variance Table with Satterthwaite's method
+                        Sum Sq Mean Sq NumDF  DenDF F value Pr(>F)    
+StimCond                   7.9     7.9     1 31.903  0.0348 0.8533    
+StimIntensity          29603.4 14801.7     2 67.488 65.4795 <2e-16 ***
+StimCond:StimIntensity   175.3    87.6     2 67.488  0.3877 0.6801    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                            estimate   SE df t.ratio p.value
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond2   -20.21 4.88 67  -4.144  0.0013
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond2   -44.14 4.88 67  -9.048  <.0001
+ StimIntensity1 StimCond2 - StimIntensity1 StimCond3    -3.01 6.79 73  -0.443  0.9978
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond3   -22.74 6.79 73  -3.348  0.0157
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond3   -41.42 6.79 73  -6.096  <.0001
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond2   -23.92 4.88 67  -4.904  0.0001
+ StimIntensity2 StimCond2 - StimIntensity1 StimCond3    17.21 6.79 73   2.532  0.1282
+ StimIntensity2 StimCond2 - StimIntensity2 StimCond3    -2.53 6.79 73  -0.373  0.9990
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond3   -21.21 6.79 73  -3.121  0.0298
+ StimIntensity3 StimCond2 - StimIntensity1 StimCond3    41.13 6.79 73   6.054  <.0001
+ StimIntensity3 StimCond2 - StimIntensity2 StimCond3    21.39 6.79 73   3.149  0.0276
+ StimIntensity3 StimCond2 - StimIntensity3 StimCond3     2.72 6.79 73   0.400  0.9986
+ StimIntensity1 StimCond3 - StimIntensity2 StimCond3   -19.74 5.32 67  -3.713  0.0054
+ StimIntensity1 StimCond3 - StimIntensity3 StimCond3   -38.41 5.32 67  -7.226  <.0001
+ StimIntensity2 StimCond3 - StimIntensity3 StimCond3   -18.68 5.32 67  -3.513  0.0099
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+[1] "NarrowInt - Fam"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_fam_ct
+
+REML criterion at convergence: 2268.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.9963 -0.3486  0.0549  0.2569  5.9580 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept)   0.0     0.00   
+ Residual             126.2    11.23   
+Number of obs: 297, groups:  AnimalID, 11
+
+Fixed effects:
+               Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)     -2.9483     0.7752 294.0000  -3.803 0.000174 ***
+StimIntensity2  -0.9895     3.4749 294.0000  -0.285 0.776031    
+StimIntensity3  14.4395     1.5039 294.0000   9.601  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.223       
+StmIntnsty3 -0.515  0.115
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+              Sum Sq Mean Sq NumDF DenDF F value    Pr(>F)    
+StimIntensity  11882  5940.9     2   294  47.072 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate   SE    df t.ratio p.value
+ StimIntensity1 - StimIntensity2    0.989 3.55 240.7   0.279  0.9580
+ StimIntensity1 - StimIntensity3  -14.440 1.62  89.3  -8.913  <.0001
+ StimIntensity2 - StimIntensity3  -15.429 3.78 165.4  -4.078  0.0002
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "NarrowInt - Nov"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimCond * StimIntensity + (1 | AnimalID/CellID)
+   Data: pv_nov_ct
+
+REML criterion at convergence: 2079.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.6398 -0.5036 -0.1076  0.4431  5.5527 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 115.720  10.757  
+ AnimalID        (Intercept)   7.157   2.675  
+ Residual                    198.274  14.081  
+Number of obs: 249, groups:  CellID:AnimalID, 80; AnimalID, 6
+
+Fixed effects:
+                         Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)               -1.4583     2.9261  15.0704  -0.498  0.62542    
+StimCond3                  1.8255     4.0251 106.2053   0.454  0.65109    
+StimIntensity2             9.3857     2.9685 163.9312   3.162  0.00187 ** 
+StimIntensity3            20.5909     2.9685 163.9312   6.936 8.84e-11 ***
+StimCond3:StimIntensity2  -0.7978     4.3872 163.9312  -0.182  0.85593    
+StimCond3:StimIntensity3  -3.4956     4.3872 163.9312  -0.797  0.42674    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmCn3 StmIn2 StmIn3 SC3:SI2
+StimCond3   -0.633                             
+StmIntnsty2 -0.507  0.369                      
+StmIntnsty3 -0.507  0.369  0.500               
+StmCnd3:SI2  0.343 -0.545 -0.677 -0.338        
+StmCnd3:SI3  0.343 -0.545 -0.338 -0.677  0.500 
+Type III Analysis of Variance Table with Satterthwaite's method
+                        Sum Sq Mean Sq NumDF   DenDF F value   Pr(>F)    
+StimCond                   3.2     3.2     1  43.858  0.0159   0.9003    
+StimIntensity          14640.7  7320.3     2 163.931 36.9203 5.79e-14 ***
+StimCond:StimIntensity   138.3    69.1     2 163.931  0.3487   0.7061    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                            estimate   SE  df t.ratio p.value
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond2    -9.39 2.97 165  -3.162  0.0226
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond2   -20.59 2.97 165  -6.936  <.0001
+ StimIntensity1 StimCond2 - StimIntensity1 StimCond3    -1.83 4.24 114  -0.430  0.9981
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond3   -10.41 4.24 114  -2.455  0.1465
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond3   -18.92 4.24 114  -4.461  0.0003
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond2   -11.21 2.97 165  -3.775  0.0030
+ StimIntensity2 StimCond2 - StimIntensity1 StimCond3     7.56 4.24 114   1.783  0.4810
+ StimIntensity2 StimCond2 - StimIntensity2 StimCond3    -1.03 4.24 114  -0.242  0.9999
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond3    -9.54 4.24 114  -2.248  0.2243
+ StimIntensity3 StimCond2 - StimIntensity1 StimCond3    18.77 4.24 114   4.425  0.0003
+ StimIntensity3 StimCond2 - StimIntensity2 StimCond3    10.18 4.24 114   2.400  0.1650
+ StimIntensity3 StimCond2 - StimIntensity3 StimCond3     1.67 4.24 114   0.394  0.9987
+ StimIntensity1 StimCond3 - StimIntensity2 StimCond3    -8.59 3.23 165  -2.658  0.0894
+ StimIntensity1 StimCond3 - StimIntensity3 StimCond3   -17.10 3.23 165  -5.292  <.0001
+ StimIntensity2 StimCond3 - StimIntensity3 StimCond3    -8.51 3.23 165  -2.634  0.0950
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+[1] "WideInt - Fam"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_fam_ct
+
+REML criterion at convergence: 922.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.1719 -0.3707  0.1118  0.5406  3.5244 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.8315   0.9119  
+ Residual             6.8730   2.6216  
+Number of obs: 192, groups:  AnimalID, 11
+
+Fixed effects:
+               Estimate Std. Error       df t value Pr(>|t|)   
+(Intercept)     -1.2187     0.3596  12.6777  -3.389  0.00501 **
+StimIntensity2  -0.6945     0.7877 187.9765  -0.882  0.37909   
+StimIntensity3  -1.1058     0.5232 186.9800  -2.113  0.03589 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.157       
+StmIntnsty3 -0.261  0.125
+Type III Analysis of Variance Table with Satterthwaite's method
+              Sum Sq Mean Sq NumDF  DenDF F value  Pr(>F)  
+StimIntensity  33.36   16.68     2 187.43  2.4269 0.09108 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate    SE  df t.ratio p.value
+ StimIntensity1 - StimIntensity2    0.694 0.794 188   0.875  0.6567
+ StimIntensity1 - StimIntensity3    1.106 0.532 187   2.080  0.0967
+ StimIntensity2 - StimIntensity3    0.411 0.898 189   0.458  0.8909
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "WideInt - Nov"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimCond * StimIntensity + (1 | AnimalID/CellID)
+   Data: pv_nov_ct
+
+REML criterion at convergence: 997.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-6.4025 -0.3344  0.0526  0.4223  3.3952 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.1643   0.4054  
+ AnimalID        (Intercept) 0.0000   0.0000  
+ Residual                    4.3098   2.0760  
+Number of obs: 231, groups:  CellID:AnimalID, 77; AnimalID, 6
+
+Fixed effects:
+                          Estimate Std. Error        df t value Pr(>|t|)
+(Intercept)                0.17244    0.31187 224.39469   0.553    0.581
+StimCond3                 -0.35628    0.49152 224.39469  -0.725    0.469
+StimIntensity2            -0.09076    0.43288 149.99999  -0.210    0.834
+StimIntensity3            -0.65380    0.43288 149.99999  -1.510    0.133
+StimCond3:StimIntensity2  -0.57365    0.68223 149.99999  -0.841    0.402
+StimCond3:StimIntensity3  -0.15021    0.68223 149.99999  -0.220    0.826
+
+Correlation of Fixed Effects:
+            (Intr) StmCn3 StmIn2 StmIn3 SC3:SI2
+StimCond3   -0.635                             
+StmIntnsty2 -0.694  0.440                      
+StmIntnsty3 -0.694  0.440  0.500               
+StmCnd3:SI2  0.440 -0.694 -0.635 -0.317        
+StmCnd3:SI3  0.440 -0.694 -0.317 -0.635  0.500 
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+                        Sum Sq Mean Sq NumDF DenDF F value  Pr(>F)  
+StimCond               17.8030 17.8030     1    75  4.1308 0.04565 *
+StimIntensity          19.6872  9.8436     2   150  2.2840 0.10541  
+StimCond:StimIntensity  3.2776  1.6388     2   150  0.3802 0.68435  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                            estimate    SE  df t.ratio p.value
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond2   0.0908 0.433 150   0.210  0.9999
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond2   0.6538 0.433 150   1.510  0.6582
+ StimIntensity1 StimCond2 - StimIntensity1 StimCond3   0.3563 0.497 218   0.717  0.9797
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond3   1.0207 0.497 218   2.055  0.3148
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond3   1.1603 0.497 218   2.337  0.1840
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond2   0.5630 0.433 150   1.301  0.7843
+ StimIntensity2 StimCond2 - StimIntensity1 StimCond3   0.2655 0.497 218   0.535  0.9947
+ StimIntensity2 StimCond2 - StimIntensity2 StimCond3   0.9299 0.497 218   1.873  0.4218
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond3   1.0695 0.497 218   2.154  0.2640
+ StimIntensity3 StimCond2 - StimIntensity1 StimCond3  -0.2975 0.497 218  -0.599  0.9910
+ StimIntensity3 StimCond2 - StimIntensity2 StimCond3   0.3669 0.497 218   0.739  0.9769
+ StimIntensity3 StimCond2 - StimIntensity3 StimCond3   0.5065 0.497 218   1.020  0.9109
+ StimIntensity1 StimCond3 - StimIntensity2 StimCond3   0.6644 0.527 150   1.260  0.8061
+ StimIntensity1 StimCond3 - StimIntensity3 StimCond3   0.8040 0.527 150   1.525  0.6489
+ StimIntensity2 StimCond3 - StimIntensity3 StimCond3   0.1396 0.527 150   0.265  0.9998
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+[1] "Pyr - Fam"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_fam_ct
+
+REML criterion at convergence: 6162.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-8.3382 -0.1005  0.0921  0.3551  7.6403 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.01701  0.1304  
+ Residual             1.16714  1.0803  
+Number of obs: 2052, groups:  AnimalID, 11
+
+Fixed effects:
+                 Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)      -0.04912    0.04893   13.23449  -1.004    0.333    
+StimIntensity2   -0.09577    0.10830 1846.32297  -0.884    0.377    
+StimIntensity3   -0.40264    0.06050 1527.93613  -6.655 3.95e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.170       
+StmIntnsty3 -0.265  0.106
+Type III Analysis of Variance Table with Satterthwaite's method
+              Sum Sq Mean Sq NumDF  DenDF F value    Pr(>F)    
+StimIntensity 51.723  25.862     2 1666.1  22.158 3.181e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate     SE   df t.ratio p.value
+ StimIntensity1 - StimIntensity2   0.0958 0.1089 1824   0.879  0.6534
+ StimIntensity1 - StimIntensity3   0.4026 0.0611 1481   6.589  <.0001
+ StimIntensity2 - StimIntensity3   0.3069 0.1193 1632   2.572  0.0275
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "Pyr - Nov"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimCond * StimIntensity + (1 | AnimalID/CellID)
+   Data: pv_nov_ct
+
+REML criterion at convergence: 7083.6
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-16.1913  -0.1514   0.0095   0.1732  27.3603 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 1.391475 1.1796  
+ AnimalID        (Intercept) 0.001005 0.0317  
+ Residual                    1.539307 1.2407  
+Number of obs: 1932, groups:  CellID:AnimalID, 530; AnimalID, 6
+
+Fixed effects:
+                           Estimate Std. Error         df t value Pr(>|t|)   
+(Intercept)              -7.171e-03  9.320e-02  2.541e+01  -0.077  0.93927   
+StimCond3                -2.724e-03  1.215e-01  7.792e+02  -0.022  0.98211   
+StimIntensity2           -1.438e-01  9.659e-02  1.365e+03  -1.488  0.13686   
+StimIntensity3           -2.535e-01  9.659e-02  1.365e+03  -2.625  0.00877 **
+StimCond3:StimIntensity2  1.850e-02  1.383e-01  1.365e+03   0.134  0.89363   
+StimCond3:StimIntensity3  1.949e-01  1.383e-01  1.365e+03   1.409  0.15900   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmCn3 StmIn2 StmIn3 SC3:SI2
+StimCond3   -0.628                             
+StmIntnsty2 -0.518  0.398                      
+StmIntnsty3 -0.518  0.398  0.500               
+StmCnd3:SI2  0.362 -0.569 -0.698 -0.349        
+StmCnd3:SI3  0.362 -0.569 -0.349 -0.698  0.500 
+Type III Analysis of Variance Table with Satterthwaite's method
+                       Sum Sq Mean Sq NumDF   DenDF F value  Pr(>F)  
+StimCond               0.8598  0.8598     1  326.87  0.5586 0.45537  
+StimIntensity          9.2056  4.6028     2 1365.26  2.9902 0.05061 .
+StimCond:StimIntensity 3.7257  1.8628     2 1365.26  1.2102 0.29847  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                            estimate     SE   df t.ratio p.value
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond2  0.14377 0.0966 1399   1.488  0.6718
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond2  0.25351 0.0966 1399   2.625  0.0920
+ StimIntensity1 StimCond2 - StimIntensity1 StimCond3  0.00272 0.1238  712   0.022  1.0000
+ StimIntensity1 StimCond2 - StimIntensity2 StimCond3  0.12799 0.1238  712   1.034  0.9065
+ StimIntensity1 StimCond2 - StimIntensity3 StimCond3  0.06131 0.1238  712   0.495  0.9963
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond2  0.10975 0.0966 1399   1.136  0.8662
+ StimIntensity2 StimCond2 - StimIntensity1 StimCond3 -0.14104 0.1238  712  -1.139  0.8649
+ StimIntensity2 StimCond2 - StimIntensity2 StimCond3 -0.01577 0.1238  712  -0.127  1.0000
+ StimIntensity2 StimCond2 - StimIntensity3 StimCond3 -0.08245 0.1238  712  -0.666  0.9856
+ StimIntensity3 StimCond2 - StimIntensity1 StimCond3 -0.25079 0.1238  712  -2.025  0.3288
+ StimIntensity3 StimCond2 - StimIntensity2 StimCond3 -0.12552 0.1238  712  -1.014  0.9134
+ StimIntensity3 StimCond2 - StimIntensity3 StimCond3 -0.19220 0.1238  712  -1.552  0.6303
+ StimIntensity1 StimCond3 - StimIntensity2 StimCond3  0.12527 0.0990 1399   1.265  0.8040
+ StimIntensity1 StimCond3 - StimIntensity3 StimCond3  0.05859 0.0990 1399   0.592  0.9916
+ StimIntensity2 StimCond3 - StimIntensity3 StimCond3 -0.06668 0.0990 1399  -0.673  0.9848
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 

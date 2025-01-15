@@ -1,0 +1,41 @@
+[1] "Percentiles for StimConditionGoalStim"
+         0%         25%         50%         75%        100% 
+   607.7704  24700.3539  40590.0145  56993.6018 153016.7118 
+[1] "Percentiles for StimConditionShamStim"
+          0%          25%          50%          75%         100% 
+    91.59977  29419.47180  43811.99082  62768.40459 642172.93936 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: ThetaPower ~ StimCondition + (1 | AnimalID)
+   Data: df
+
+REML criterion at convergence: 128318.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0106 -0.4936 -0.0666  0.3885 19.0762 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ AnimalID (Intercept) 123034877 11092   
+ Residual             940192206 30663   
+Number of obs: 5461, groups:  AnimalID, 5
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)    43938.434   5051.373     4.246   8.698 0.000733 ***
+StimCondition2  6530.474   1062.367  5458.346   6.147 8.45e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+StimCondtn2 -0.170
+Type III Analysis of Variance Table with Satterthwaite's method
+                  Sum Sq    Mean Sq NumDF  DenDF F value    Pr(>F)    
+StimCondition 3.5527e+10 3.5527e+10     1 5458.3  37.787 8.451e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate   SE  df z.ratio p.value
+ StimCondition1 - StimCondition2    -6530 1062 Inf  -6.147  <.0001
+
+Degrees-of-freedom method: asymptotic 

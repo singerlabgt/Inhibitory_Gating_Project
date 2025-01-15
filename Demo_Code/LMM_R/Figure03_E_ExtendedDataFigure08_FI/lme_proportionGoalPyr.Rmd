@@ -1,0 +1,94 @@
+---
+title: "lme_proportionGoalPyr"
+output: html_document
+date: "2023-01-23"
+---
+
+```{r}
+#install.packages("lme4")
+#install.packages("nlme")
+#install.packages("ICC")
+#install.packages("pbkrtest")
+#install.packages("emmeans")
+#install.packages("car")
+#install.packages("sjPlot")
+```
+
+
+```{r}
+### load the libraries
+rm(list = setdiff(ls(), lsf.str()))
+
+library(nlme)
+library(lme4)
+library(lmerTest)
+library(emmeans)
+
+
+
+### Read the ROC data
+```
+
+
+```{r}
+#load MATLAB output (in table format in .txt) file in R
+foldN = "."
+
+tblFilename = paste0(foldN, "/data_wt.txt")
+txtFilename = paste0(foldN, "/stats_lme4.txt") #create .txt file to save LMM outputs 
+
+mydata = read.csv(tblFilename, head=T)
+
+wt = mydata
+wt$AnimalID = as.factor(wt$AnimalID)
+wt$NovelDay = as.factor(wt$NovelDay)
+wt$Environment = as.factor(wt$Environment)
+
+
+
+sink(txtFilename) ## open up new .txt file to save all outputs 
+
+obj.lmer1=lmerTest::lmer(Proportion ~ NovelDay*Environment + (1|AnimalID), data=wt)
+
+print(summary(obj.lmer1))
+print(anova(obj.lmer1, ddf="Kenward-Roger"))
+print(contrast(emmeans(obj.lmer1, specs=c("NovelDay","Environment")), "pairwise", adjust = "tukey"))
+print(contrast(emmeans(obj.lmer1, specs=c("Environment")), "pairwise", adjust = "tukey"))
+
+##proportion of goal-representing pyramidal cells in PV mice
+tblFilename = paste0(foldN, "/data_pv.txt")
+
+mydata = read.csv(tblFilename, head=T)
+pv = mydata
+pv$AnimalID = as.factor(pv$AnimalID)
+pv$NovelDay = as.factor(pv$NovelDay)
+pv$StimCondition = as.factor(pv$StimCondition)
+
+obj.lmer2=lmerTest::lmer(Proportion ~ NovelDay*StimCondition + (1|AnimalID), data=pv)
+
+print(summary(obj.lmer2))
+print(anova(obj.lmer2, ddf="Kenward-Roger"))
+print(contrast(emmeans(obj.lmer2, specs=c("NovelDay","StimCondition")), "pairwise", adjust = "tukey"))
+print(contrast(emmeans(obj.lmer2, specs=c("StimCondition")), "pairwise", adjust = "tukey"))
+
+
+##proportion of non-goal-representing pyramidal cells in PV mice
+
+tblFilename = paste0(foldN, "/data_pv_nongoal.txt")
+
+mydata = read.csv(tblFilename, head=T)
+pv_nongoal = mydata
+pv$AnimalID = as.factor(pv$AnimalID)
+pv$NovelDay = as.factor(pv$NovelDay)
+pv$StimCondition = as.factor(pv$StimCondition)
+
+obj.lmer3=lmerTest::lmer(Proportion ~ NovelDay*StimCondition + (1|AnimalID), data=pv_nongoal)
+
+print(summary(obj.lmer3))
+print(anova(obj.lmer3, ddf="Kenward-Roger"))
+print(contrast(emmeans(obj.lmer3, specs=c("NovelDay","StimCondition")), "pairwise", adjust = "tukey"))
+print(contrast(emmeans(obj.lmer3, specs=c("StimCondition")), "pairwise", adjust = "tukey"))
+
+sink()  # returns output to the console
+
+```

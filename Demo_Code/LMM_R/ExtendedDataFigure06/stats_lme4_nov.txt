@@ -1,0 +1,68 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: resFR ~ isCorrect + (1 | AnimalID/CellID)
+   Data: nsInt
+
+REML criterion at convergence: 201.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.31903 -0.66266 -0.06265  0.60851  3.11801 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.001097 0.03311 
+ AnimalID        (Intercept) 0.005233 0.07234 
+ Residual                    0.099870 0.31602 
+Number of obs: 339, groups:  CellID:AnimalID, 191; AnimalID, 7
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)  -0.202031   0.038342  11.969804  -5.269   0.0002 ***
+isCorrect1    0.003381   0.035292 182.695151   0.096   0.9238    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+           (Intr)
+isCorrect1 -0.528
+Type III Analysis of Variance Table with Kenward-Roger's method
+              Sum Sq    Mean Sq NumDF  DenDF F value Pr(>F)
+isCorrect 0.00090555 0.00090555     1 185.77  0.0091 0.9242
+ contrast                estimate     SE  df t.ratio p.value
+ isCorrect0 - isCorrect1 -0.00338 0.0355 186  -0.095  0.9242
+
+Degrees-of-freedom method: kenward-roger 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: resFR ~ isCorrect + (1 | AnimalID/CellID)
+   Data: Pyr
+
+REML criterion at convergence: 1751.3
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.68806 -0.63304 -0.03847  0.68087  2.32283 
+
+Random effects:
+ Groups          Name        Variance  Std.Dev.
+ CellID:AnimalID (Intercept) 0.0110916 0.1053  
+ AnimalID        (Intercept) 0.0003803 0.0195  
+ Residual                    0.1264824 0.3556  
+Number of obs: 2042, groups:  CellID:AnimalID, 1008; AnimalID, 7
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)  1.858e-01  1.455e-02  1.406e+01  12.773 3.97e-09 ***
+isCorrect1  -2.632e-03  1.605e-02  1.175e+03  -0.164     0.87    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+           (Intr)
+isCorrect1 -0.622
+Type III Analysis of Variance Table with Kenward-Roger's method
+             Sum Sq   Mean Sq NumDF  DenDF F value Pr(>F)
+isCorrect 0.0033651 0.0033651     1 1191.8  0.0266 0.8705
+ contrast                estimate     SE   df t.ratio p.value
+ isCorrect0 - isCorrect1  0.00263 0.0161 1192   0.163  0.8705
+
+Degrees-of-freedom method: kenward-roger 

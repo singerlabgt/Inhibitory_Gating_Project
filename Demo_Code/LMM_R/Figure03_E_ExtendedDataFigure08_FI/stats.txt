@@ -1,0 +1,250 @@
+WT Nov1 vs Nov2 spatial info by narrow iterneurons ranksum p= 0.058427
+WT Nov1 vs Nov3 spatial info by narrow iterneurons ranksum p= 1.0145e-06
+WT Nov2 vs Nov3 spatial info by narrow iterneurons ranksum p= 0.0023262
+WT Nov1, Nov2, Nov3 n=22  32  39
+WT Nov all days n=93
+WT Nov1 by narrow iterneurons [min, 25th, 50th, 75th, max] =0.014395     0.05935    0.083347     0.12728     0.29135
+WT Nov1 by narrow iterneurons, 0.098686 +/- 0.0028397
+WT Nov2 by narrow iterneurons [min, 25th, 50th, 75th, max] =0.025088    0.082463     0.12634     0.27209     0.81021
+WT Nov2 by narrow iterneurons, 0.20306 +/- 0.0062566
+WT Nov3 by narrow iterneurons [min, 25th, 50th, 75th, max] =0.0548     0.14935     0.20471     0.55139      1.7724
+WT Nov3 by narrow iterneurons, 0.4262 +/- 0.010696
+WT Fam1 vs Fam2 spatial info by narrow iterneurons ranksum p= 0.91555
+WT Fam1 vs Fam3 spatial info by narrow iterneurons ranksum p= 0.49209
+WT Fam2 vs Fam3 spatial info by narrow iterneurons ranksum p= 0.48865
+WT Fam1, Fam2, Fam3 n=35  48  48
+WT Fam all days n=131
+WT Fam1 by narrow iterneurons [min, 25th, 50th, 75th, max] =0.054924     0.17712     0.28091     0.64696      1.6174
+WT v1 by narrow iterneurons, 0.43496 +/- 0.010042
+WT Fam1 vs Nov1 spatial info by narrow iterneurons ranksum p= 2.125e-07
+WT Fam2 by narrow iterneurons [min, 25th, 50th, 75th, max] =0.10051      0.2026      0.2538     0.63081      1.7841
+WT v2 by narrow iterneurons, 0.42298 +/- 0.0069873
+WT Fam2 vs Nov2 spatial info by narrow iterneurons ranksum p= 7.4093e-05
+WT Fam3 by narrow iterneurons [min, 25th, 50th, 75th, max] =0.08606     0.17676     0.31802     0.76051      2.2032
+WT v3 by narrow iterneurons, 0.55699 +/- 0.010749
+WT Fam3 vs Nov3 spatial info by narrow iterneurons ranksum p= 0.14562
+WT Nov1 vs Nov2 spatial info ranksum p= 0.097527
+WT Nov1 vs Nov3 spatial info ranksum p= 2.2854e-08
+WT Nov2 vs Nov3 spatial info ranksum p= 3.1036e-06
+WT Nov1, Nov2, Nov3 n=146  191  204
+WT Nov all days n=541
+WT Nov1 [min, 25th, 50th, 75th, max] =0.05049     0.18557      0.3623     0.72467      2.5029
+WT Nov1, 0.47927 +/- 0.0026145
+WT Nov2 [min, 25th, 50th, 75th, max] =0.038251     0.23961     0.43752     0.67823      1.9775
+WT Nov2, 0.51843 +/- 0.0018561
+WT Nov3 [min, 25th, 50th, 75th, max] =0.089063     0.39057     0.61073     0.98573      4.0531
+WT Nov3, 0.74297 +/- 0.002595
+WT Fam1 vs Fam2 spatial info ranksum p= 0.44266
+WT Fam1 vs Fam3 spatial info ranksum p= 0.10882
+WT Fam2 vs Fam3 spatial info ranksum p= 0.016984
+WT Fam1, Fam2, Fam3 n=185  159  209
+WT Fam all days n=553
+WT Fam1 [min, 25th, 50th, 75th, max] =0.13046     0.56737     0.94966      1.2816      2.9114
+WT Fam1, 0.96198 +/- 0.0027193
+WT Fam1 vs Nov1 spatial info ranksum p= 8.2079e-20
+WT Fam2 [min, 25th, 50th, 75th, max] =0.15833     0.52508     0.83871      1.2321      2.3327
+WT Fam2, 0.91439 +/- 0.0028952
+WT Fam2 vs Nov2 spatial info ranksum p= 3.2504e-17
+WT Fam3 [min, 25th, 50th, 75th, max] =0.14201     0.62382      1.0982      1.3509      3.0181
+WT Fam3, 1.036 +/- 0.0024266
+WT Fam3 vs Nov3 spatial info ranksum p= 1.5926e-10
+PVxAi32 FamGoalStim1 vs FamGoalStim2 in spatial info fam only ranksum p= 0.055051
+PVxAi32 FamGoalStim1 vs FamGoalStim3 in spatial info fam only ranksum p= 0.63986
+PVxAi32 FamGoalStim2 vs FamGoalStim3 in spatial info fam only ranksum p= 0.17459
+FamGoalStim1, FamGoalStim2, FamGoalStim3 n=60  36  40
+FamGoalStim1 [min, 25th, 50th, 75th, max] =0.2423     0.51161     0.88041      1.3924       2.792
+FamGoalStim1, 1.0463 +/- 0.010593
+FamGoalStim2 [min, 25th, 50th, 75th, max] =0.1827     0.46359     0.70017     0.91089      2.2041
+FamGoalStim2, 0.79465 +/- 0.012857
+FamGoalStim3 [min, 25th, 50th, 75th, max] =0.14226     0.54146     0.93975      1.2666       2.171
+FamGoalStim3, 0.92173 +/- 0.012072
+FamGoalStim all days [min, 25th, 50th, 75th, max] = 0.14226     0.51081     0.80151      1.2706       2.792
+FamGoalStim all days n=136
+PVxAi32 NovGoalStim1 vs NovGoalStim2 spatial info ranksum p= 0.6929
+PVxAi32 NovGoalStim1 vs NovGoalStim3 spatial info ranksum p= 0.016497
+PVxAi32 NovGoalStim2 vs NovGoalStim3 spatial info ranksum p= 0.055349
+NovGoalStim1, NovGoalStim2, NovGoalStim3 n=55  45  44
+NovGoalStim1 [min, 25th, 50th, 75th, max] =0.033884      0.2182     0.33245     0.47669      1.9352
+NovGoalStim1, 0.40823 +/- 0.0062192
+NovGoalStim2 [min, 25th, 50th, 75th, max] =0.029934      0.1983     0.31398     0.45103     0.93844
+NovGoalStim2, 0.36058 +/- 0.0050448
+NovGoalStim3 [min, 25th, 50th, 75th, max] =0.035693      0.1422     0.23021     0.35007      1.0891
+NovGoalStim3, 0.28393 +/- 0.004767
+NovGoalStim all days [min, 25th, 50th, 75th, max] = 0.029934      0.1697     0.30198     0.42986      1.9352
+NovGoalStim all days n=144
+PVxAi32 NovShamStim1 vs NovShamStim2 spatial info ranksum p= 0.1479
+PVxAi32 NovShamStim1 vs NovShamStim3 spatial info ranksum p= 0.0019126
+PVxAi32 NovShamStim2 vs NovShamStim3 spatial info ranksum p= 0.029616
+NovShamStim1, NovShamStim2, NovShamStim3 n=53  60  55
+NovShamStim1 [min, 25th, 50th, 75th, max] =0.056373     0.14506     0.22103     0.47396     0.96325
+NovShamStim1, 0.32531 +/- 0.0045628
+PVxAi32 NovGoalStim1 vs NovShamStim1spatial info ranksum p= 0.13374
+NovShamStim2 [min, 25th, 50th, 75th, max] =0.083999     0.18322     0.32062     0.48247        2.09
+NovShamStim2, 0.3796 +/- 0.0050362
+PVxAi32 NovGoalStim2 vs NovShamStim2spatial info ranksum p= 0.97159
+NovShamStim3 [min, 25th, 50th, 75th, max] =0.096388     0.23563     0.42681     0.68518       1.801
+NovShamStim3, 0.49985 +/- 0.0062344
+PVxAi32 NovGoalStim3 vs NovShamStim3spatial info ranksum p= 0.00021521
+NovShamStim all days [min, 25th, 50th, 75th, max] = 0.056373     0.17085     0.32759     0.56394        2.09
+NovShamStim all days n=168
+PVxAi32 NovGoalStim1 vs NovGoalStim2 spatial info outside goals ranksum p= 0.078232
+PVxAi32 NovGoalStim1 vs NovGoalStim3 spatial info outside goals ranksum p= 0.045342
+PVxAi32 NovGoalStim2 vs NovGoalStim3 spatial info outside goals ranksum p= 0.91583
+NovGoalStim1, NovGoalStim2, NovGoalStim3 outside goals n=70  51  65
+NovGoalStim1 outside goals [min, 25th, 50th, 75th, max] =0.03493     0.11893     0.18445      0.3281       1.033
+NovGoalStim1outside goals, 0.26546 +/- 0.003014
+NovGoalStim2 outside goals [min, 25th, 50th, 75th, max] =0.054296      0.1475     0.26119     0.42968      1.0772
+NovGoalStim2outside goals, 0.33099 +/- 0.0044754
+NovGoalStim3 outside goals [min, 25th, 50th, 75th, max] =0.026702     0.18122     0.28441     0.43809     0.88786
+NovGoalStim3outside goals, 0.31149 +/- 0.0029954
+NovGoalStim all days outside goals [min, 25th, 50th, 75th, max] =0.026702     0.14361     0.23677     0.42453      1.0772
+NovGoalStim all days outside goals n=186
+NovShamStim1, NovShamStim2, NovShamStim3 outside goals n=45  43  58
+NovShamStim1 outside goals [min, 25th, 50th, 75th, max] =0.032138     0.12177     0.19469     0.36643      2.5428
+NovShamStim1outside goals, 0.30228 +/- 0.0085365
+NovShamStim2 outside goals [min, 25th, 50th, 75th, max] =0.076043     0.17751      0.3399     0.48705      1.5689
+NovShamStim2outside goals, 0.38725 +/- 0.0072937
+NovShamStim3 outside goals [min, 25th, 50th, 75th, max] =0.067393     0.26193     0.47051     0.71928      2.3768
+NovShamStim3outside goals, 0.54564 +/- 0.0070494
+NovShamStim all days outside goals [min, 25th, 50th, 75th, max] =0.032138     0.16124     0.35005     0.51319      2.5428
+NovShamStim all days outside goals n=146
+PVxAi32 NovGoalStim1 vs NovShamStim1 spatial info outside goals ranksum p= 0.95202
+PVxAi32 NovGoalStim2 vs NovShamStim2 spatial info outside goals ranksum p= 0.43886
+PVxAi32 NovGoalStim3 vs NovShamStim3 spatial info outside goals ranksum p= 0.00016193
+PVxAi32 FamGoalStim1 vs FamGoalStim2 in spatial info fam only ranksum p= 0.055051
+PVxAi32 FamGoalStim1 vs FamGoalStim3 in spatial info fam only ranksum p= 0.63986
+PVxAi32 FamGoalStim2 vs FamGoalStim3 in spatial info fam only ranksum p= 0.17459
+FamGoalStim1, FamGoalStim2, FamGoalStim3 n=60  36  40
+FamGoalStim1 [min, 25th, 50th, 75th, max] =0.2423     0.51161     0.88041      1.3924       2.792
+FamGoalStim1, 1.0463 +/- 0.010593
+FamGoalStim2 [min, 25th, 50th, 75th, max] =0.1827     0.46359     0.70017     0.91089      2.2041
+FamGoalStim2, 0.79465 +/- 0.012857
+FamGoalStim3 [min, 25th, 50th, 75th, max] =0.14226     0.54146     0.93975      1.2666       2.171
+FamGoalStim3, 0.92173 +/- 0.012072
+FamGoalStim all days [min, 25th, 50th, 75th, max] = 0.14226     0.51081     0.80151      1.2706       2.792
+FamGoalStim all days n=136
+PVxAi32 NovGoalStim1 vs NovGoalStim2 spatial info ranksum p= 0.6929
+PVxAi32 NovGoalStim1 vs NovGoalStim3 spatial info ranksum p= 0.016497
+PVxAi32 NovGoalStim2 vs NovGoalStim3 spatial info ranksum p= 0.055349
+NovGoalStim1, NovGoalStim2, NovGoalStim3 n=55  45  44
+NovGoalStim1 [min, 25th, 50th, 75th, max] =0.033884      0.2182     0.33245     0.47669      1.9352
+NovGoalStim1, 0.40823 +/- 0.0062192
+NovGoalStim2 [min, 25th, 50th, 75th, max] =0.029934      0.1983     0.31398     0.45103     0.93844
+NovGoalStim2, 0.36058 +/- 0.0050448
+NovGoalStim3 [min, 25th, 50th, 75th, max] =0.035693      0.1422     0.23021     0.35007      1.0891
+NovGoalStim3, 0.28393 +/- 0.004767
+NovGoalStim all days [min, 25th, 50th, 75th, max] = 0.029934      0.1697     0.30198     0.42986      1.9352
+NovGoalStim all days n=144
+PVxAi32 NovShamStim1 vs NovShamStim2 spatial info ranksum p= 0.1479
+PVxAi32 NovShamStim1 vs NovShamStim3 spatial info ranksum p= 0.0019126
+PVxAi32 NovShamStim2 vs NovShamStim3 spatial info ranksum p= 0.029616
+NovShamStim1, NovShamStim2, NovShamStim3 n=53  60  55
+NovShamStim1 [min, 25th, 50th, 75th, max] =0.056373     0.14506     0.22103     0.47396     0.96325
+NovShamStim1, 0.32531 +/- 0.0045628
+PVxAi32 NovGoalStim1 vs NovShamStim1spatial info ranksum p= 0.13374
+NovShamStim2 [min, 25th, 50th, 75th, max] =0.083999     0.18322     0.32062     0.48247        2.09
+NovShamStim2, 0.3796 +/- 0.0050362
+PVxAi32 NovGoalStim2 vs NovShamStim2spatial info ranksum p= 0.97159
+NovShamStim3 [min, 25th, 50th, 75th, max] =0.096388     0.23563     0.42681     0.68518       1.801
+NovShamStim3, 0.49985 +/- 0.0062344
+PVxAi32 NovGoalStim3 vs NovShamStim3spatial info ranksum p= 0.00021521
+NovShamStim all days [min, 25th, 50th, 75th, max] = 0.056373     0.17085     0.32759     0.56394        2.09
+NovShamStim all days n=168
+PVxAi32 NovGoalStim1 vs NovGoalStim2 spatial info outside goals ranksum p= 0.078232
+PVxAi32 NovGoalStim1 vs NovGoalStim3 spatial info outside goals ranksum p= 0.045342
+PVxAi32 NovGoalStim2 vs NovGoalStim3 spatial info outside goals ranksum p= 0.91583
+NovGoalStim1, NovGoalStim2, NovGoalStim3 outside goals n=70  51  65
+NovGoalStim1 outside goals [min, 25th, 50th, 75th, max] =0.03493     0.11893     0.18445      0.3281       1.033
+NovGoalStim1outside goals, 0.26546 +/- 0.003014
+NovGoalStim2 outside goals [min, 25th, 50th, 75th, max] =0.054296      0.1475     0.26119     0.42968      1.0772
+NovGoalStim2outside goals, 0.33099 +/- 0.0044754
+NovGoalStim3 outside goals [min, 25th, 50th, 75th, max] =0.026702     0.18122     0.28441     0.43809     0.88786
+NovGoalStim3outside goals, 0.31149 +/- 0.0029954
+NovGoalStim all days outside goals [min, 25th, 50th, 75th, max] =0.026702     0.14361     0.23677     0.42453      1.0772
+NovGoalStim all days outside goals n=186
+NovShamStim1, NovShamStim2, NovShamStim3 outside goals n=45  43  58
+NovShamStim1 outside goals [min, 25th, 50th, 75th, max] =0.032138     0.12177     0.19469     0.36643      2.5428
+NovShamStim1outside goals, 0.30228 +/- 0.0085365
+NovShamStim2 outside goals [min, 25th, 50th, 75th, max] =0.076043     0.17751      0.3399     0.48705      1.5689
+NovShamStim2outside goals, 0.38725 +/- 0.0072937
+NovShamStim3 outside goals [min, 25th, 50th, 75th, max] =0.067393     0.26193     0.47051     0.71928      2.3768
+NovShamStim3outside goals, 0.54564 +/- 0.0070494
+NovShamStim all days outside goals [min, 25th, 50th, 75th, max] =0.032138     0.16124     0.35005     0.51319      2.5428
+NovShamStim all days outside goals n=146
+PVxAi32 NovGoalStim1 vs NovShamStim1 spatial info outside goals ranksum p= 0.95202
+PVxAi32 NovGoalStim2 vs NovShamStim2 spatial info outside goals ranksum p= 0.43886
+PVxAi32 NovGoalStim3 vs NovShamStim3 spatial info outside goals ranksum p= 0.00016193
+WT Fam1 vs Fam2 percent goal-representing Pyr. cells ranksum = 0.2749
+WT Fam1 vs Fam3 percent goal-representing Pyr. cells ranksum = 0.73394
+WT Fam2 vs Fam3 percent goal-representing Pyr. cells ranksum = 0.69601
+WT Fam1, Fam2, Fam3 n=13  14  14
+WT Nov1 vs Nov2 percent goal-representing Pyr. cells ranksum = 0.16628
+WT Nov1 vs Nov3 percent goal-representing Pyr. cells ranksum = 0.29666
+WT Nov2 vs Nov3 percent goal-representing Pyr. cells ranksum = 0.5349
+WT Nov1, Nov2, Nov3 n=13  14  14
+WT Fam1 vs Nov1 percent goal-representing Pyr. cells ranksum = 0.13677
+WT Fam2 vs Nov2 percent goal-representing Pyr. cells ranksum = 0.47623
+WT Fam3 vs Nov3 percent goal-representing Pyr. cells ranksum = 0.945
+PVxAi32 NovGoalStim1 vs NovGoalStim2 percent goal-representing Pyr. cells ranksum = 0.84127
+PVxAi32 NovGoalStim1 vs NovGoalStim3 percent goal-representing Pyr. cells ranksum = 0.84127
+PVxAi32 NovGoalStim2 vs NovGoalStim3 percent goal-representing Pyr. cells ranksum = 1
+PVxAi32 NovGoalStim1, 2, 3 n=5  5  5
+PVxAi32 NovShamStim1 vs NovShamStim2 percent goal-representing Pyr. cells ranksum = 0.45238
+PVxAi32 NovShamStim1 vs NovShamStim3 percent goal-representing Pyr. cells ranksum = 1
+PVxAi32 NovShamStim2 vs NovShamStim3 percent goal-representing Pyr. cells ranksum = 0.34127
+PVxAi32 NovShamStim1, 2, 3 n=5  5  5
+PVxAi32 NovGoalStim1 vs NovShamStim1 percent goal-representing Pyr. cells ranksum = 0.54762
+PVxAi32 NovGoalStim2 vs NovShamStim2 percent goal-representing Pyr. cells ranksum = 0.1746
+PVxAi32 NovGoalStim3 vs NovShamStim3 percent goal-representing Pyr. cells ranksum = 0.30952
+PVxAi32 NovGoalStim1 vs NovGoalStim2 percent outside-goal-representing Pyr. cells ranksum = 0.84127
+PVxAi32 NovGoalStim1 vs NovGoalStim3 percent outside-goal-representing Pyr. cells ranksum = 0.84127
+PVxAi32 NovGoalStim2 vs NovGoalStim3 percent outside-goal-representing Pyr. cells ranksum = 1
+PVxAi32 NovGoalStim1, 2, 3 n=5  5  5
+PVxAi32 NovShamStim1 vs NovShamStim2 percent outside-goal-representing Pyr. cells ranksum = 0.45238
+PVxAi32 NovShamStim1 vs NovShamStim3 percent outside-goal-representing Pyr. cells ranksum = 1
+PVxAi32 NovShamStim2 vs NovShamStim3 percent outside-goal-representing Pyr. cells ranksum = 0.34127
+PVxAi32 NovShamStim1, 2, 3 n=5  5  5
+PVxAi32 NovGoalStim1 vs NovShamStim1 percent outside-goal-representing Pyr. cells ranksum = 0.54762
+PVxAi32 NovGoalStim2 vs NovShamStim2 percent outside-goal-representing Pyr. cells ranksum = 0.1746
+PVxAi32 NovGoalStim3 vs NovShamStim3 percent outside-goal-representing Pyr. cells ranksum = 0.30952
+Rate map correlations
+famMap_pvPeakInFamGoalwGoalStim [min, 25th, 50th, 75th, max] =0.18451     0.35956     0.47248     0.59879      0.9933
+famMap_pvPeakInFamGoalwGoalStim n =136, 0.49155 ± 0.0013349
+famMap_pvPeakInFamGoalwShamStim [min, 25th, 50th, 75th, max] =0.079176     0.25196     0.37981     0.51456     0.95123
+famMap_pvPeakInFamGoalwShamStim n =116, 0.40823 ± 0.0015999
+famMap_pvPeakInNovGoalwGoalStim [min, 25th, 50th, 75th, max] =0.17951     0.34201     0.47928     0.64888     0.99191
+famMap_pvPeakInNovGoalwGoalStim n =144, 0.50105 ± 0.0014147
+famMap_pvPeakInNovGoalwShamStim [min, 25th, 50th, 75th, max] =0.062949     0.26262     0.40781     0.58878     0.95123
+famMap_pvPeakInNovGoalwShamStim n =168, 0.43786 ± 0.00126
+famMap_pvNoPeakInFamGoalwGoalStim [min, 25th, 50th, 75th, max] =0.17794      0.4206     0.57558     0.73597     0.99191
+famMap_pvNoPeakInFamGoalwGoalStim n =194, 0.57912 ± 0.0010488
+famMap_pvNoPeakInFamGoalwShamStim [min, 25th, 50th, 75th, max] =0.062949     0.32663     0.48225     0.64246     0.98285
+famMap_pvNoPeakInFamGoalwShamStim n =198, 0.49221 ± 0.0010883
+famMap_pvNoPeakInNovGoalwGoalStim [min, 25th, 50th, 75th, max] =0.17794     0.44582     0.55379     0.73358      0.9933
+famMap_pvNoPeakInNovGoalwGoalStim n =186, 0.57553 ± 0.0010208
+famMap_pvNoPeakInNovGoalwShamStim [min, 25th, 50th, 75th, max] =0.075882     0.35019     0.47112     0.62502     0.98285
+famMap_pvNoPeakInNovGoalwShamStim n =146, 0.48803 ± 0.0013868
+novMap_pvPeakInFamGoalwGoalStim [min, 25th, 50th, 75th, max] =0.043083     0.18721     0.23571     0.30531     0.82309
+novMap_pvPeakInFamGoalwGoalStim n =136, 0.2549 ± 0.0007904
+novMap_pvPeakInFamGoalwShamStim [min, 25th, 50th, 75th, max] =0.093592     0.20259     0.28116     0.41234     0.84406
+novMap_pvPeakInFamGoalwShamStim n =116, 0.31344 ± 0.001247
+novMap_pvPeakInNovGoalwGoalStim [min, 25th, 50th, 75th, max] =0.068226     0.18108     0.22618     0.30537     0.82309
+novMap_pvPeakInNovGoalwGoalStim n =144, 0.25195 ± 0.00077652
+novMap_pvPeakInNovGoalwShamStim [min, 25th, 50th, 75th, max] =0.076232     0.19854     0.27971     0.36979     0.65396
+novMap_pvPeakInNovGoalwShamStim n =168, 0.29402 ± 0.00076719
+novMap_pvNoPeakInFamGoalwGoalStim [min, 25th, 50th, 75th, max] =-0.0063439     0.15662     0.21222     0.28695     0.61644
+novMap_pvNoPeakInFamGoalwGoalStim n =194, 0.23058 ± 0.00057984
+novMap_pvNoPeakInFamGoalwShamStim [min, 25th, 50th, 75th, max] =0.042849      0.2024     0.28662     0.37177      0.8617
+novMap_pvNoPeakInFamGoalwShamStim n =198, 0.30359 ± 0.00071899
+novMap_pvNoPeakInNovGoalwGoalStim [min, 25th, 50th, 75th, max] =-0.0063439     0.15594     0.21445     0.29698     0.61644
+novMap_pvNoPeakInNovGoalwGoalStim n =186, 0.23183 ± 0.00059009
+novMap_pvNoPeakInNovGoalwShamStim [min, 25th, 50th, 75th, max] =0.042849     0.21192     0.29457     0.39764      0.8617
+novMap_pvNoPeakInNovGoalwShamStim n =146, 0.32243 ± 0.0010745
+famMap_wtPeakInFamGoal [min, 25th, 50th, 75th, max] =0.077403     0.33539     0.44963     0.56012      0.9299
+famMap_wtPeakInFamGoal n =553, 0.45259 ± 0.00031177
+famMap_wtPeakInNovGoal [min, 25th, 50th, 75th, max] =-0.0024031     0.33046     0.45772     0.59452     0.97658
+famMap_wtPeakInNovGoal n =542, 0.46724 ± 0.00036815
+famMap_wtNoPeakInFamGoal [min, 25th, 50th, 75th, max] =-0.061929     0.26357     0.43598     0.61373     0.98452
+famMap_wtNoPeakInFamGoal n =628, 0.44946 ± 0.00036388
+famMap_wtNoPeakInNovGoal [min, 25th, 50th, 75th, max] =-0.061929     0.27121     0.43082     0.57131     0.98452
+famMap_wtNoPeakInNovGoal n =639, 0.43709 ± 0.000324

@@ -1,0 +1,344 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ SpeedQuartile + (1 | AnimalID/CellID)
+   Data: wtFRxSpeedQ_NSint
+
+REML criterion at convergence: 5103.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.6281 -0.1952 -0.0178  0.2013  8.4443 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 256.57   16.018  
+ AnimalID        (Intercept)  12.18    3.490  
+ Residual                     10.17    3.189  
+Number of obs: 812, groups:  CellID:AnimalID, 197; AnimalID, 7
+
+Fixed effects:
+               Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)     18.3583     1.7689   6.5316  10.379 2.68e-05 ***
+SpeedQuartile2   0.4356     0.3166 611.9480   1.376  0.16931    
+SpeedQuartile3   0.8466     0.3166 611.9480   2.674  0.00769 ** 
+SpeedQuartile4   0.9593     0.3166 611.9480   3.030  0.00255 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) SpdQr2 SpdQr3
+SpeedQurtl2 -0.089              
+SpeedQurtl3 -0.089  0.500       
+SpeedQurtl4 -0.089  0.500  0.500
+Type III Analysis of Variance Table with Kenward-Roger's method
+              Sum Sq Mean Sq NumDF DenDF F value  Pr(>F)  
+SpeedQuartile 115.85  38.616     3   612  3.7963 0.01024 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate    SE  df t.ratio p.value
+ SpeedQuartile1 - SpeedQuartile2   -0.436 0.317 612  -1.376  0.5149
+ SpeedQuartile1 - SpeedQuartile3   -0.847 0.317 612  -2.674  0.0384
+ SpeedQuartile1 - SpeedQuartile4   -0.959 0.317 612  -3.030  0.0135
+ SpeedQuartile2 - SpeedQuartile3   -0.411 0.317 612  -1.298  0.5644
+ SpeedQuartile2 - SpeedQuartile4   -0.524 0.317 612  -1.654  0.3490
+ SpeedQuartile3 - SpeedQuartile4   -0.113 0.317 612  -0.356  0.9845
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ SpeedQuartile + (1 | AnimalID/CellID)
+   Data: wtFRxSpeedQ_WSint
+
+REML criterion at convergence: 1886.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-6.2987 -0.2391 -0.0285  0.2243  6.3907 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 29.762   5.455   
+ AnimalID        (Intercept)  0.000   0.000   
+ Residual                     2.207   1.485   
+Number of obs: 408, groups:  CellID:AnimalID, 101; AnimalID, 7
+
+Fixed effects:
+               Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)      7.5905     0.5624 111.0292  13.496   <2e-16 ***
+SpeedQuartile2   0.1993     0.2080 304.0286   0.958    0.339    
+SpeedQuartile3   0.1447     0.2080 304.0286   0.695    0.487    
+SpeedQuartile4   0.3403     0.2080 304.0286   1.636    0.103    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) SpdQr2 SpdQr3
+SpeedQurtl2 -0.185              
+SpeedQurtl3 -0.185  0.500       
+SpeedQurtl4 -0.185  0.500  0.500
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Kenward-Roger's method
+              Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+SpeedQuartile 6.0592  2.0197     3   304  0.9153 0.4338
+ contrast                        estimate    SE  df t.ratio p.value
+ SpeedQuartile1 - SpeedQuartile2  -0.1993 0.208 304  -0.958  0.7732
+ SpeedQuartile1 - SpeedQuartile3  -0.1447 0.208 304  -0.695  0.8988
+ SpeedQuartile1 - SpeedQuartile4  -0.3403 0.208 304  -1.636  0.3599
+ SpeedQuartile2 - SpeedQuartile3   0.0547 0.208 304   0.263  0.9936
+ SpeedQuartile2 - SpeedQuartile4  -0.1410 0.208 304  -0.678  0.9055
+ SpeedQuartile3 - SpeedQuartile4  -0.1957 0.208 304  -0.941  0.7830
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ SpeedQuartile + (1 | AnimalID/CellID)
+   Data: wtFRxSpeedQ_pyr
+
+REML criterion at convergence: 23020.7
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-14.5156  -0.1212  -0.0463   0.0642  16.7262 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 14.7797  3.844   
+ AnimalID        (Intercept)  0.1798  0.424   
+ Residual                     4.1538  2.038   
+Number of obs: 4724, groups:  CellID:AnimalID, 1017; AnimalID, 7
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)    1.879e+00  2.103e-01 6.610e+00   8.938 6.28e-05 ***
+SpeedQuartile2 6.045e-02  8.387e-02 3.701e+03   0.721    0.471    
+SpeedQuartile3 8.007e-02  8.387e-02 3.701e+03   0.955    0.340    
+SpeedQuartile4 9.784e-02  8.387e-02 3.701e+03   1.167    0.243    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) SpdQr2 SpdQr3
+SpeedQurtl2 -0.199              
+SpeedQurtl3 -0.199  0.500       
+SpeedQurtl4 -0.199  0.500  0.500
+Type III Analysis of Variance Table with Kenward-Roger's method
+              Sum Sq Mean Sq NumDF  DenDF F value Pr(>F)
+SpeedQuartile 6.4173  2.1391     3 3704.2   0.515  0.672
+ contrast                        estimate     SE  df z.ratio p.value
+ SpeedQuartile1 - SpeedQuartile2  -0.0604 0.0839 Inf  -0.721  0.8889
+ SpeedQuartile1 - SpeedQuartile3  -0.0801 0.0839 Inf  -0.955  0.7752
+ SpeedQuartile1 - SpeedQuartile4  -0.0978 0.0839 Inf  -1.167  0.6480
+ SpeedQuartile2 - SpeedQuartile3  -0.0196 0.0839 Inf  -0.234  0.9955
+ SpeedQuartile2 - SpeedQuartile4  -0.0374 0.0839 Inf  -0.446  0.9704
+ SpeedQuartile3 - SpeedQuartile4  -0.0178 0.0839 Inf  -0.212  0.9966
+
+Degrees-of-freedom method: asymptotic 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest
+]
+Formula: DataY ~ SpeedQuartile * CellType + (1 | AnimalID/CellID)
+   Data: wtFRxSpeedQ_all
+
+REML criterion at convergence: 35713.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-8.0164 -0.1004 -0.0268  0.0767 11.1299 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 43.06201 6.5622  
+ AnimalID        (Intercept)  0.06642 0.2577  
+ Residual                    13.50430 3.6748  
+Number of obs: 5944, groups:  CellID:AnimalID, 1225; AnimalID, 7
+
+Fixed effects:
+                          Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)                19.5671     0.3946   82.1128  49.592  < 2e-16 ***
+SpeedQuartile2              0.4356     0.3648 4698.2291   1.194  0.23243    
+SpeedQuartile3              0.8466     0.3648 4698.2291   2.321  0.02033 *  
+SpeedQuartile4              0.9593     0.3648 4698.2291   2.630  0.00856 ** 
+CellType2                 -12.6019     0.5838 5612.4031 -21.586  < 2e-16 ***
+CellType3                 -17.8824     0.3725 5702.2726 -48.006  < 2e-16 ***
+SpeedQuartile2:CellType2   -0.2363     0.6307 4698.2291  -0.375  0.70795    
+SpeedQuartile3:CellType2   -0.7019     0.6307 4698.2291  -1.113  0.26582    
+SpeedQuartile4:CellType2   -0.6190     0.6307 4698.2291  -0.981  0.32644    
+SpeedQuartile2:CellType3   -0.3752     0.3949 4698.2291  -0.950  0.34210    
+SpeedQuartile3:CellType3   -0.7665     0.3949 4698.2291  -1.941  0.05229 .  
+SpeedQuartile4:CellType3   -0.8615     0.3949 4698.2291  -2.182  0.02918 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) SpdQr2 SpdQr3 SpdQr4 CllTy2 CllTy3 SQ2:CT2 SQ3:CT2 SQ4:CT2
+SpeedQurtl2 -0.462                                                           
+SpeedQurtl3 -0.462  0.500                                                    
+SpeedQurtl4 -0.462  0.500  0.500                                             
+CellType2   -0.481  0.312  0.312  0.312                                      
+CellType3   -0.803  0.490  0.490  0.490  0.505                               
+SpdQrt2:CT2  0.267 -0.578 -0.289 -0.289 -0.540 -0.283                        
+SpdQrt3:CT2  0.267 -0.289 -0.578 -0.289 -0.540 -0.283  0.500                 
+SpdQrt4:CT2  0.267 -0.289 -0.289 -0.578 -0.540 -0.283  0.500   0.500         
+SpdQrt2:CT3  0.427 -0.924 -0.462 -0.462 -0.289 -0.530  0.534   0.267   0.267 
+SpdQrt3:CT3  0.427 -0.462 -0.924 -0.462 -0.289 -0.530  0.267   0.534   0.267 
+SpdQrt4:CT3  0.427 -0.462 -0.462 -0.924 -0.289 -0.530  0.267   0.267   0.534 
+            SQ2:CT3 SQ3:CT3
+SpeedQurtl2                
+SpeedQurtl3                
+SpeedQurtl4                
+CellType2                  
+CellType3                  
+SpdQrt2:CT2                
+SpdQrt3:CT2                
+SpdQrt4:CT2                
+SpdQrt2:CT3                
+SpdQrt3:CT3  0.500         
+SpdQrt4:CT3  0.500   0.500 
+Type III Analysis of Variance Table with Kenward-Roger's method
+                       Sum Sq Mean Sq NumDF  DenDF   F value Pr(>F)    
+SpeedQuartile              69    23.1     3 4708.4    1.7133 0.1620    
+CellType                56764 28382.0     2 5862.6 2101.6979 <2e-16 ***
+SpeedQuartile:CellType     83    13.8     6 4708.4    1.0190 0.4107    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                            estimate    SE  df z.ratio
+ SpeedQuartile1 CellType1 - SpeedQuartile2 CellType1  -0.4356 0.365 Inf  -1.194
+ SpeedQuartile1 CellType1 - SpeedQuartile3 CellType1  -0.8466 0.365 Inf  -2.321
+ SpeedQuartile1 CellType1 - SpeedQuartile4 CellType1  -0.9593 0.365 Inf  -2.630
+ SpeedQuartile1 CellType1 - SpeedQuartile1 CellType2  12.6019 0.584 Inf  21.586
+ SpeedQuartile1 CellType1 - SpeedQuartile2 CellType2  12.4026 0.584 Inf  21.245
+ SpeedQuartile1 CellType1 - SpeedQuartile3 CellType2  12.4572 0.584 Inf  21.338
+ SpeedQuartile1 CellType1 - SpeedQuartile4 CellType2  12.2616 0.584 Inf  21.003
+ SpeedQuartile1 CellType1 - SpeedQuartile1 CellType3  17.8824 0.372 Inf  48.006
+ SpeedQuartile1 CellType1 - SpeedQuartile2 CellType3  17.8220 0.372 Inf  47.844
+ SpeedQuartile1 CellType1 - SpeedQuartile3 CellType3  17.8023 0.372 Inf  47.792
+ SpeedQuartile1 CellType1 - SpeedQuartile4 CellType3  17.7846 0.372 Inf  47.744
+ SpeedQuartile2 CellType1 - SpeedQuartile3 CellType1  -0.4110 0.365 Inf  -1.127
+ SpeedQuartile2 CellType1 - SpeedQuartile4 CellType1  -0.5237 0.365 Inf  -1.436
+ SpeedQuartile2 CellType1 - SpeedQuartile1 CellType2  13.0375 0.584 Inf  22.332
+ SpeedQuartile2 CellType1 - SpeedQuartile2 CellType2  12.8382 0.584 Inf  21.991
+ SpeedQuartile2 CellType1 - SpeedQuartile3 CellType2  12.8928 0.584 Inf  22.085
+ SpeedQuartile2 CellType1 - SpeedQuartile4 CellType2  12.6972 0.584 Inf  21.749
+ SpeedQuartile2 CellType1 - SpeedQuartile1 CellType3  18.3180 0.372 Inf  49.176
+ SpeedQuartile2 CellType1 - SpeedQuartile2 CellType3  18.2576 0.372 Inf  49.014
+ SpeedQuartile2 CellType1 - SpeedQuartile3 CellType3  18.2380 0.372 Inf  48.961
+ SpeedQuartile2 CellType1 - SpeedQuartile4 CellType3  18.2202 0.372 Inf  48.913
+ SpeedQuartile3 CellType1 - SpeedQuartile4 CellType1  -0.1127 0.365 Inf  -0.309
+ SpeedQuartile3 CellType1 - SpeedQuartile1 CellType2  13.4485 0.584 Inf  23.036
+ SpeedQuartile3 CellType1 - SpeedQuartile2 CellType2  13.2491 0.584 Inf  22.695
+ SpeedQuartile3 CellType1 - SpeedQuartile3 CellType2  13.3038 0.584 Inf  22.789
+ SpeedQuartile3 CellType1 - SpeedQuartile4 CellType2  13.1082 0.584 Inf  22.453
+ SpeedQuartile3 CellType1 - SpeedQuartile1 CellType3  18.7290 0.372 Inf  50.279
+ SpeedQuartile3 CellType1 - SpeedQuartile2 CellType3  18.6686 0.372 Inf  50.117
+ SpeedQuartile3 CellType1 - SpeedQuartile3 CellType3  18.6489 0.372 Inf  50.064
+ SpeedQuartile3 CellType1 - SpeedQuartile4 CellType3  18.6312 0.372 Inf  50.017
+ SpeedQuartile4 CellType1 - SpeedQuartile1 CellType2  13.5612 0.584 Inf  23.229
+ SpeedQuartile4 CellType1 - SpeedQuartile2 CellType2  13.3619 0.584 Inf  22.888
+ SpeedQuartile4 CellType1 - SpeedQuartile3 CellType2  13.4166 0.584 Inf  22.982
+ SpeedQuartile4 CellType1 - SpeedQuartile4 CellType2  13.2209 0.584 Inf  22.646
+ SpeedQuartile4 CellType1 - SpeedQuartile1 CellType3  18.8417 0.372 Inf  50.582
+ SpeedQuartile4 CellType1 - SpeedQuartile2 CellType3  18.7813 0.372 Inf  50.420
+ SpeedQuartile4 CellType1 - SpeedQuartile3 CellType3  18.7617 0.372 Inf  50.367
+ SpeedQuartile4 CellType1 - SpeedQuartile4 CellType3  18.7439 0.372 Inf  50.319
+ SpeedQuartile1 CellType2 - SpeedQuartile2 CellType2  -0.1993 0.515 Inf  -0.387
+ SpeedQuartile1 CellType2 - SpeedQuartile3 CellType2  -0.1447 0.515 Inf  -0.281
+ SpeedQuartile1 CellType2 - SpeedQuartile4 CellType2  -0.3403 0.515 Inf  -0.661
+ SpeedQuartile1 CellType2 - SpeedQuartile1 CellType3   5.2805 0.510 Inf  10.361
+ SpeedQuartile1 CellType2 - SpeedQuartile2 CellType3   5.2201 0.510 Inf  10.243
+ SpeedQuartile1 CellType2 - SpeedQuartile3 CellType3   5.2005 0.510 Inf  10.204
+ SpeedQuartile1 CellType2 - SpeedQuartile4 CellType3   5.1827 0.510 Inf  10.170
+ SpeedQuartile2 CellType2 - SpeedQuartile3 CellType2   0.0547 0.515 Inf   0.106
+ SpeedQuartile2 CellType2 - SpeedQuartile4 CellType2  -0.1410 0.515 Inf  -0.274
+ SpeedQuartile2 CellType2 - SpeedQuartile1 CellType3   5.4799 0.510 Inf  10.753
+ SpeedQuartile2 CellType2 - SpeedQuartile2 CellType3   5.4194 0.510 Inf  10.634
+ SpeedQuartile2 CellType2 - SpeedQuartile3 CellType3   5.3998 0.510 Inf  10.595
+ SpeedQuartile2 CellType2 - SpeedQuartile4 CellType3   5.3820 0.510 Inf  10.561
+ SpeedQuartile3 CellType2 - SpeedQuartile4 CellType2  -0.1957 0.515 Inf  -0.380
+ SpeedQuartile3 CellType2 - SpeedQuartile1 CellType3   5.4252 0.510 Inf  10.645
+ SpeedQuartile3 CellType2 - SpeedQuartile2 CellType3   5.3647 0.510 Inf  10.527
+ SpeedQuartile3 CellType2 - SpeedQuartile3 CellType3   5.3451 0.510 Inf  10.488
+ SpeedQuartile3 CellType2 - SpeedQuartile4 CellType3   5.3274 0.510 Inf  10.453
+ SpeedQuartile4 CellType2 - SpeedQuartile1 CellType3   5.6209 0.510 Inf  11.029
+ SpeedQuartile4 CellType2 - SpeedQuartile2 CellType3   5.5604 0.510 Inf  10.911
+ SpeedQuartile4 CellType2 - SpeedQuartile3 CellType3   5.5408 0.510 Inf  10.872
+ SpeedQuartile4 CellType2 - SpeedQuartile4 CellType3   5.5230 0.510 Inf  10.837
+ SpeedQuartile1 CellType3 - SpeedQuartile2 CellType3  -0.0604 0.151 Inf  -0.400
+ SpeedQuartile1 CellType3 - SpeedQuartile3 CellType3  -0.0801 0.151 Inf  -0.529
+ SpeedQuartile1 CellType3 - SpeedQuartile4 CellType3  -0.0978 0.151 Inf  -0.647
+ SpeedQuartile2 CellType3 - SpeedQuartile3 CellType3  -0.0196 0.151 Inf  -0.130
+ SpeedQuartile2 CellType3 - SpeedQuartile4 CellType3  -0.0374 0.151 Inf  -0.247
+ SpeedQuartile3 CellType3 - SpeedQuartile4 CellType3  -0.0178 0.151 Inf  -0.118
+ p.value
+  0.9895
+  0.4614
+  0.2626
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  0.9936
+  0.9566
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  1.0000
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  1.0000
+  1.0000
+  1.0000
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  1.0000
+  1.0000
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  1.0000
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  <.0001
+  1.0000
+  1.0000
+  1.0000
+  1.0000
+  1.0000
+  1.0000
+
+Degrees-of-freedom method: asymptotic 
+P value adjustment: tukey method for comparing a family of 12 estimates 

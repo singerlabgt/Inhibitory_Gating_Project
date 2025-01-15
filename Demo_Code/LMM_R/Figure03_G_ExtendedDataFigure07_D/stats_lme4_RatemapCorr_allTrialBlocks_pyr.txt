@@ -1,0 +1,42 @@
+[1] "Pyramidal cells, Nov Day 1, all trial blocks"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ TrialBlock + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: -278.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5971 -0.4648 -0.0581  0.3151  4.6390 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.008808 0.09385 
+ AnimalID        (Intercept) 0.003143 0.05607 
+ Residual                    0.014096 0.11872 
+Number of obs: 292, groups:  CellID:AnimalID, 138; AnimalID, 5
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)   
+(Intercept) 2.367e-01  3.036e-02 3.536e+00   7.796  0.00239 **
+TrialBlock2 9.637e-03  1.779e-02 1.544e+02   0.542  0.58877   
+TrialBlock3 2.914e-02  2.655e-02 1.539e+02   1.097  0.27424   
+TrialBlock4 6.233e-02  2.626e-02 1.532e+02   2.373  0.01887 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) TrlBl2 TrlBl3
+TrialBlock2 -0.222              
+TrialBlock3 -0.136  0.330       
+TrialBlock4 -0.137  0.334  0.395
+Type III Analysis of Variance Table with Satterthwaite's method
+             Sum Sq  Mean Sq NumDF  DenDF F value Pr(>F)
+TrialBlock 0.081226 0.027075     3 152.56  1.9209 0.1285
+ contrast                  estimate     SE  df t.ratio p.value
+ TrialBlock2 - TrialBlock1  0.00964 0.0180 163   0.536  0.9325
+ TrialBlock3 - TrialBlock1  0.02914 0.0269 162   1.084  0.6267
+ TrialBlock4 - TrialBlock1  0.06233 0.0266 162   2.344  0.0596
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: sidak method for 3 tests 

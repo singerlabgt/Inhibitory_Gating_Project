@@ -1,0 +1,494 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * StimCond + (1 | AnimalID/CellID)
+   Data: pvGoalModPyr
+
+REML criterion at convergence: -512.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0304 -0.6687 -0.0838  0.4888  4.9368 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.000000 0.0000  
+ AnimalID        (Intercept) 0.002992 0.0547  
+ Residual                    0.011015 0.1050  
+Number of obs: 335, groups:  CellID:AnimalID, 178; AnimalID, 6
+
+Fixed effects:
+                      Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)           0.282941   0.026611   8.735753  10.632 2.72e-06 ***
+NovelDay2            -0.002765   0.020524 325.212986  -0.135   0.8929    
+NovelDay3            -0.029389   0.021382 325.533892  -1.374   0.1703    
+StimCond3            -0.035892   0.020929 328.974336  -1.715   0.0873 .  
+NovelDay2:StimCond3   0.021521   0.028258 325.288339   0.762   0.4469    
+NovelDay3:StimCond3   0.138012   0.028686 324.894873   4.811 2.30e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 StmCn3 ND2:SC
+NovelDay2   -0.362                            
+NovelDay3   -0.360  0.457                     
+StimCond3   -0.382  0.439  0.436              
+NvlDy2:StC3  0.270 -0.721 -0.319 -0.678       
+NvlDy3:StC3  0.269 -0.322 -0.726 -0.674  0.480
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Kenward-Roger's method
+                    Sum Sq  Mean Sq NumDF  DenDF F value    Pr(>F)    
+NovelDay          0.087797 0.043899     2 307.94  3.9855   0.01955 *  
+StimCond          0.019114 0.019114     1 305.25  1.7354   0.18871    
+NovelDay:StimCond 0.286670 0.143335     2 292.32 13.0130 3.856e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                  estimate     SE  df t.ratio p.value
+ NovelDay1 StimCond2 - NovelDay2 StimCond2  0.00276 0.0206 302   0.134  1.0000
+ NovelDay1 StimCond2 - NovelDay3 StimCond2  0.02939 0.0215 305   1.367  0.7468
+ NovelDay1 StimCond2 - NovelDay1 StimCond3  0.03589 0.0211 288   1.700  0.5327
+ NovelDay1 StimCond2 - NovelDay2 StimCond3  0.01714 0.0200 301   0.855  0.9566
+ NovelDay1 StimCond2 - NovelDay3 StimCond3 -0.07273 0.0204 310  -3.572  0.0054
+ NovelDay2 StimCond2 - NovelDay3 StimCond2  0.02662 0.0220 311   1.212  0.8306
+ NovelDay2 StimCond2 - NovelDay1 StimCond3  0.03313 0.0222 308   1.492  0.6695
+ NovelDay2 StimCond2 - NovelDay2 StimCond3  0.01437 0.0210 298   0.684  0.9836
+ NovelDay2 StimCond2 - NovelDay3 StimCond3 -0.07550 0.0209 299  -3.612  0.0048
+ NovelDay3 StimCond2 - NovelDay1 StimCond3  0.00650 0.0227 316   0.286  0.9997
+ NovelDay3 StimCond2 - NovelDay2 StimCond3 -0.01225 0.0213 309  -0.575  0.9926
+ NovelDay3 StimCond2 - NovelDay3 StimCond3 -0.10212 0.0214 313  -4.769  <.0001
+ NovelDay1 StimCond3 - NovelDay2 StimCond3 -0.01876 0.0197 290  -0.954  0.9320
+ NovelDay1 StimCond3 - NovelDay3 StimCond3 -0.10862 0.0199 305  -5.472  <.0001
+ NovelDay2 StimCond3 - NovelDay3 StimCond3 -0.08987 0.0190 289  -4.726  0.0001
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * StimCond + (1 | AnimalID/CellID)
+   Data: pvNonGoalModPyr
+
+REML criterion at convergence: -452
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.6513 -0.6479 -0.1244  0.5726  3.9345 
+
+Random effects:
+ Groups          Name        Variance  Std.Dev.
+ CellID:AnimalID (Intercept) 0.0002204 0.01485 
+ AnimalID        (Intercept) 0.0040087 0.06331 
+ Residual                    0.0136564 0.11686 
+Number of obs: 346, groups:  CellID:AnimalID, 193; AnimalID, 6
+
+Fixed effects:
+                     Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)         2.327e-01  2.980e-02 7.056e+00   7.807 0.000102 ***
+NovelDay2           2.715e-02  2.114e-02 3.032e+02   1.284 0.200007    
+NovelDay3           1.261e-02  2.002e-02 3.077e+02   0.630 0.529161    
+StimCond3           2.382e-03  2.334e-02 3.263e+02   0.102 0.918747    
+NovelDay2:StimCond3 8.581e-03  3.252e-02 3.181e+02   0.264 0.792072    
+NovelDay3:StimCond3 1.172e-01  3.058e-02 3.101e+02   3.833 0.000153 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 StmCn3 ND2:SC
+NovelDay2   -0.292                            
+NovelDay3   -0.324  0.447                     
+StimCond3   -0.326  0.365  0.415              
+NvlDy2:StC3  0.203 -0.646 -0.287 -0.639       
+NvlDy3:StC3  0.211 -0.291 -0.656 -0.679  0.486
+Type III Analysis of Variance Table with Kenward-Roger's method
+                   Sum Sq Mean Sq NumDF  DenDF F value    Pr(>F)    
+NovelDay          0.29753 0.14877     2 306.89 10.8935 2.688e-05 ***
+StimCond          0.11431 0.11431     1 313.61  8.3700 0.0040816 ** 
+NovelDay:StimCond 0.24435 0.12217     2 311.04  8.9462 0.0001669 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                  estimate     SE  df t.ratio p.value
+ NovelDay1 StimCond2 - NovelDay2 StimCond2 -0.02715 0.0212 299  -1.280  0.7960
+ NovelDay1 StimCond2 - NovelDay3 StimCond2 -0.01261 0.0201 304  -0.627  0.9889
+ NovelDay1 StimCond2 - NovelDay1 StimCond3 -0.00238 0.0236 324  -0.101  1.0000
+ NovelDay1 StimCond2 - NovelDay2 StimCond3 -0.03811 0.0237 314  -1.610  0.5924
+ NovelDay1 StimCond2 - NovelDay3 StimCond3 -0.13221 0.0225 322  -5.880  <.0001
+ NovelDay2 StimCond2 - NovelDay3 StimCond2  0.01454 0.0218 303   0.668  0.9853
+ NovelDay2 StimCond2 - NovelDay1 StimCond3  0.02477 0.0254 321   0.975  0.9255
+ NovelDay2 StimCond2 - NovelDay2 StimCond3 -0.01096 0.0254 318  -0.432  0.9981
+ NovelDay2 StimCond2 - NovelDay3 StimCond3 -0.10506 0.0243 307  -4.317  0.0003
+ NovelDay3 StimCond2 - NovelDay1 StimCond3  0.01023 0.0238 309   0.429  0.9981
+ NovelDay3 StimCond2 - NovelDay2 StimCond3 -0.02550 0.0238 309  -1.070  0.8931
+ NovelDay3 StimCond2 - NovelDay3 StimCond3 -0.11960 0.0228 304  -5.241  <.0001
+ NovelDay1 StimCond3 - NovelDay2 StimCond3 -0.03573 0.0250 322  -1.430  0.7087
+ NovelDay1 StimCond3 - NovelDay3 StimCond3 -0.12983 0.0232 310  -5.602  <.0001
+ NovelDay2 StimCond3 - NovelDay3 StimCond3 -0.09410 0.0236 311  -3.983  0.0012
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * StimCond + (1 | AnimalID/CellID)
+   Data: pvGoalModInt
+
+REML criterion at convergence: -11.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.6667 -0.5403  0.1602  0.5096  1.8165 
+
+Random effects:
+ Groups          Name        Variance  Std.Dev.
+ CellID:AnimalID (Intercept) 0.0134374 0.11592 
+ AnimalID        (Intercept) 0.0009686 0.03112 
+ Residual                    0.0232782 0.15257 
+Number of obs: 55, groups:  CellID:AnimalID, 43; AnimalID, 6
+
+Fixed effects:
+                    Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)          0.56152    0.04895  7.80471  11.471 3.69e-06 ***
+NovelDay2           -0.15443    0.06750 41.11233  -2.288   0.0274 *  
+NovelDay3           -0.06104    0.07093 38.70650  -0.861   0.3948    
+StimCond3           -0.22284    0.08233 29.25083  -2.707   0.0112 *  
+NovelDay2:StimCond3  0.15470    0.12893 40.14761   1.200   0.2372    
+NovelDay3:StimCond3  0.18977    0.14074 32.08410   1.348   0.1870    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 StmCn3 ND2:SC
+NovelDay2   -0.605                            
+NovelDay3   -0.573  0.398                     
+StimCond3   -0.433  0.327  0.294              
+NvlDy2:StC3  0.273 -0.504 -0.203 -0.659       
+NvlDy3:StC3  0.217 -0.192 -0.486 -0.589  0.407
+Type III Analysis of Variance Table with Kenward-Roger's method
+                    Sum Sq  Mean Sq NumDF  DenDF F value  Pr(>F)  
+NovelDay          0.051259 0.025629     2 45.879  1.0992 0.34175  
+StimCond          0.069356 0.069356     1 32.292  2.9794 0.09389 .
+NovelDay:StimCond 0.044654 0.022327     2 39.589  0.9555 0.39332  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                   estimate     SE   df t.ratio p.value
+ NovelDay1 StimCond2 - NovelDay2 StimCond2  0.154427 0.0738 38.0   2.093  0.3125
+ NovelDay1 StimCond2 - NovelDay3 StimCond2  0.061039 0.0777 37.2   0.786  0.9683
+ NovelDay1 StimCond2 - NovelDay1 StimCond3  0.222840 0.0885 23.6   2.518  0.1590
+ NovelDay1 StimCond2 - NovelDay2 StimCond3  0.222569 0.0997 42.2   2.233  0.2448
+ NovelDay1 StimCond2 - NovelDay3 StimCond3  0.094109 0.1124 44.6   0.837  0.9589
+ NovelDay2 StimCond2 - NovelDay3 StimCond2 -0.093387 0.0833 44.4  -1.122  0.8698
+ NovelDay2 StimCond2 - NovelDay1 StimCond3  0.068414 0.0961 29.8   0.712  0.9790
+ NovelDay2 StimCond2 - NovelDay2 StimCond3  0.068142 0.1065 40.0   0.640  0.9872
+ NovelDay2 StimCond2 - NovelDay3 StimCond3 -0.060318 0.1209 36.3  -0.499  0.9959
+ NovelDay3 StimCond2 - NovelDay1 StimCond3  0.161801 0.0989 34.1   1.636  0.5815
+ NovelDay3 StimCond2 - NovelDay2 StimCond3  0.161530 0.1100 45.5   1.469  0.6851
+ NovelDay3 StimCond2 - NovelDay3 StimCond3  0.033070 0.1217 38.1   0.272  0.9998
+ NovelDay1 StimCond3 - NovelDay2 StimCond3 -0.000271 0.1192 40.6  -0.002  1.0000
+ NovelDay1 StimCond3 - NovelDay3 StimCond3 -0.128731 0.1306 44.3  -0.986  0.9201
+ NovelDay2 StimCond3 - NovelDay3 StimCond3 -0.128460 0.1318 48.0  -0.975  0.9237
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * StimCond + (1 | AnimalID/CellID)
+   Data: pvNonGoalModInt
+
+REML criterion at convergence: -3.9
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-0.85398 -0.18020  0.02978  0.25385  0.73292 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.038253 0.19558 
+ AnimalID        (Intercept) 0.001187 0.03446 
+ Residual                    0.003992 0.06318 
+Number of obs: 41, groups:  CellID:AnimalID, 37; AnimalID, 6
+
+Fixed effects:
+                    Estimate Std. Error       df t value Pr(>|t|)  
+(Intercept)          0.24396    0.09082  3.11727   2.686   0.0716 .
+NovelDay2            0.13603    0.11658  3.00064   1.167   0.3276  
+NovelDay3           -0.04759    0.12551  4.06414  -0.379   0.7235  
+StimCond3            0.29213    0.10889  7.88971   2.683   0.0282 *
+NovelDay2:StimCond3 -0.12854    0.14756  5.50792  -0.871   0.4200  
+NovelDay3:StimCond3  0.02793    0.15920 21.25376   0.175   0.8624  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 StmCn3 ND2:SC
+NovelDay2   -0.683                            
+NovelDay3   -0.719  0.505                     
+StimCond3   -0.801  0.561  0.576              
+NvlDy2:StC3  0.682 -0.841 -0.499 -0.807       
+NvlDy3:StC3  0.646 -0.333 -0.842 -0.749  0.574
+Type III Analysis of Variance Table with Kenward-Roger's method
+                    Sum Sq  Mean Sq NumDF  DenDF F value   Pr(>F)   
+NovelDay          0.010098 0.005049     2 7.1309  1.2401 0.344994   
+StimCond          0.066883 0.066883     1 5.4518 16.7553 0.007848 **
+NovelDay:StimCond 0.003529 0.001764     2 7.9802  0.4293 0.665181   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                  estimate     SE    df t.ratio p.value
+ NovelDay1 StimCond2 - NovelDay2 StimCond2 -0.13603 0.1539  2.48  -0.884  0.9253
+ NovelDay1 StimCond2 - NovelDay3 StimCond2  0.04759 0.1446  9.89   0.329  0.9993
+ NovelDay1 StimCond2 - NovelDay1 StimCond3 -0.29213 0.1248  7.29  -2.340  0.2872
+ NovelDay1 StimCond2 - NovelDay2 StimCond3 -0.29962 0.1002  1.74  -2.990     NaN
+ NovelDay1 StimCond2 - NovelDay3 StimCond3 -0.27246 0.1216  2.00  -2.241     NaN
+ NovelDay2 StimCond2 - NovelDay3 StimCond2  0.18362 0.1388 17.78   1.323  0.7690
+ NovelDay2 StimCond2 - NovelDay1 StimCond3 -0.15610 0.1258 11.14  -1.240  0.8092
+ NovelDay2 StimCond2 - NovelDay2 StimCond3 -0.16359 0.1185  2.84  -1.381  0.7424
+ NovelDay2 StimCond2 - NovelDay3 StimCond3 -0.13644 0.0982  1.98  -1.390     NaN
+ NovelDay3 StimCond2 - NovelDay1 StimCond3 -0.33972 0.1197 13.40  -2.839  0.1108
+ NovelDay3 StimCond2 - NovelDay2 StimCond3 -0.34721 0.1108 17.25  -3.133  0.0562
+ NovelDay3 StimCond2 - NovelDay3 StimCond3 -0.32005 0.1160 19.85  -2.759  0.1070
+ NovelDay1 StimCond3 - NovelDay2 StimCond3 -0.00749 0.0833 33.49  -0.090  1.0000
+ NovelDay1 StimCond3 - NovelDay3 StimCond3  0.01967 0.0923 24.86   0.213  0.9999
+ NovelDay2 StimCond3 - NovelDay3 StimCond3  0.02716 0.0690  2.05   0.394  0.9967
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * Environ + (1 | AnimalID/CellID)
+   Data: wtGoalModPyr
+
+REML criterion at convergence: -1184.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.7022 -0.6678 -0.0770  0.5518  4.8769 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.000000 0.00000 
+ AnimalID        (Intercept) 0.007155 0.08459 
+ Residual                    0.020621 0.14360 
+Number of obs: 1195, groups:  CellID:AnimalID, 362; AnimalID, 7
+
+Fixed effects:
+                     Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)         4.467e-01  3.356e-02  6.907e+00  13.310 3.54e-06 ***
+NovelDay2           8.288e-03  1.506e-02  1.184e+03   0.550   0.5821    
+NovelDay3          -6.065e-03  1.409e-02  1.185e+03  -0.430   0.6669    
+Environ2           -2.504e-01  1.476e-02  1.184e+03 -16.965  < 2e-16 ***
+NovelDay2:Environ2  5.324e-02  2.113e-02  1.184e+03   2.519   0.0119 *  
+NovelDay3:Environ2  9.987e-02  2.015e-02  1.183e+03   4.957 8.21e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 Envrn2 ND2:E2
+NovelDay2   -0.204                            
+NovelDay3   -0.222  0.491                     
+Environ2    -0.204  0.456  0.486              
+NvlDy2:Env2  0.145 -0.711 -0.350 -0.694       
+NvlDy3:Env2  0.152 -0.339 -0.690 -0.731  0.512
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Kenward-Roger's method
+                  Sum Sq Mean Sq NumDF  DenDF F value    Pr(>F)    
+NovelDay          0.4137  0.2068     2 1178.3  10.031 4.790e-05 ***
+Environ          11.3893 11.3893     1 1093.1 552.315 < 2.2e-16 ***
+NovelDay:Environ  0.5058  0.2529     2 1086.4  12.265 5.405e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                estimate     SE   df t.ratio p.value
+ NovelDay1 Environ1 - NovelDay2 Environ1 -0.00829 0.0151 1154  -0.550  0.9940
+ NovelDay1 Environ1 - NovelDay3 Environ1  0.00607 0.0141 1151   0.430  0.9981
+ NovelDay1 Environ1 - NovelDay1 Environ2  0.25035 0.0148 1090  16.950  <.0001
+ NovelDay1 Environ1 - NovelDay2 Environ2  0.18883 0.0145 1137  13.058  <.0001
+ NovelDay1 Environ1 - NovelDay3 Environ2  0.15655 0.0141 1145  11.122  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ1  0.01435 0.0147 1132   0.974  0.9263
+ NovelDay2 Environ1 - NovelDay1 Environ2  0.25864 0.0156 1155  16.617  <.0001
+ NovelDay2 Environ1 - NovelDay2 Environ2  0.19712 0.0152 1083  12.938  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ2  0.16484 0.0148 1145  11.132  <.0001
+ NovelDay3 Environ1 - NovelDay1 Environ2  0.24429 0.0147 1163  16.669  <.0001
+ NovelDay3 Environ1 - NovelDay2 Environ2  0.18276 0.0143 1137  12.751  <.0001
+ NovelDay3 Environ1 - NovelDay3 Environ2  0.15049 0.0138 1095  10.939  <.0001
+ NovelDay1 Environ2 - NovelDay2 Environ2 -0.06153 0.0149 1149  -4.137  0.0005
+ NovelDay1 Environ2 - NovelDay3 Environ2 -0.09380 0.0146 1155  -6.427  <.0001
+ NovelDay2 Environ2 - NovelDay3 Environ2 -0.03228 0.0143 1136  -2.264  0.2098
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * Environ + (1 | AnimalID/CellID)
+   Data: wtNonGoalModPyr
+
+REML criterion at convergence: -761
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.0709 -0.6439 -0.0953  0.5330  4.6166 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.001271 0.03566 
+ AnimalID        (Intercept) 0.006391 0.07994 
+ Residual                    0.031083 0.17630 
+Number of obs: 1373, groups:  CellID:AnimalID, 375; AnimalID, 7
+
+Fixed effects:
+                     Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)         4.461e-01  3.272e-02  7.681e+00  13.632 1.18e-06 ***
+NovelDay2          -1.011e-03  1.742e-02  1.271e+03  -0.058  0.95370    
+NovelDay3          -7.587e-03  1.652e-02  1.293e+03  -0.459  0.64608    
+Environ2           -2.380e-01  1.687e-02  1.222e+03 -14.110  < 2e-16 ***
+NovelDay2:Environ2  4.069e-02  2.482e-02  1.227e+03   1.639  0.10146    
+NovelDay3:Environ2  7.460e-02  2.286e-02  1.215e+03   3.264  0.00113 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 Envrn2 ND2:E2
+NovelDay2   -0.264                            
+NovelDay3   -0.278  0.516                     
+Environ2    -0.277  0.509  0.533              
+NvlDy2:Env2  0.187 -0.700 -0.357 -0.677       
+NvlDy3:Env2  0.204 -0.378 -0.708 -0.737  0.503
+Type III Analysis of Variance Table with Kenward-Roger's method
+                  Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)    
+NovelDay          0.2049  0.1024     2 1341.2   3.2953  0.037356 *  
+Environ          12.8972 12.8972     1 1218.9 414.9268 < 2.2e-16 ***
+NovelDay:Environ  0.3307  0.1653     2 1217.9   5.3190  0.005012 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                estimate     SE   df t.ratio p.value
+ NovelDay1 Environ1 - NovelDay2 Environ1  0.00101 0.0174 1273   0.058  1.0000
+ NovelDay1 Environ1 - NovelDay3 Environ1  0.00759 0.0165 1295   0.459  0.9975
+ NovelDay1 Environ1 - NovelDay1 Environ2  0.23802 0.0169 1225  14.098  <.0001
+ NovelDay1 Environ1 - NovelDay2 Environ2  0.19834 0.0182 1273  10.896  <.0001
+ NovelDay1 Environ1 - NovelDay3 Environ2  0.17100 0.0166 1294  10.330  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ1  0.00658 0.0167 1289   0.393  0.9988
+ NovelDay2 Environ1 - NovelDay1 Environ2  0.23701 0.0170 1266  13.938  <.0001
+ NovelDay2 Environ1 - NovelDay2 Environ2  0.19733 0.0183 1216  10.795  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ2  0.16999 0.0168 1307  10.108  <.0001
+ NovelDay3 Environ1 - NovelDay1 Environ2  0.23043 0.0162 1313  14.262  <.0001
+ NovelDay3 Environ1 - NovelDay2 Environ2  0.19075 0.0174 1308  10.956  <.0001
+ NovelDay3 Environ1 - NovelDay3 Environ2  0.16342 0.0154 1215  10.580  <.0001
+ NovelDay1 Environ2 - NovelDay2 Environ2 -0.03968 0.0177 1283  -2.237  0.2216
+ NovelDay1 Environ2 - NovelDay3 Environ2 -0.06701 0.0162 1309  -4.146  0.0005
+ NovelDay2 Environ2 - NovelDay3 Environ2 -0.02734 0.0174 1312  -1.573  0.6166
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * Environ + (1 | AnimalID/CellID)
+   Data: wtGoalModInt
+
+REML criterion at convergence: -165.3
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.34619 -0.66613 -0.05018  0.56711  3.04470 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.004325 0.06577 
+ AnimalID        (Intercept) 0.005617 0.07495 
+ Residual                    0.022029 0.14842 
+Number of obs: 250, groups:  CellID:AnimalID, 134; AnimalID, 7
+
+Fixed effects:
+                     Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)          0.506752   0.038638  14.116030  13.115 2.68e-09 ***
+NovelDay2            0.026371   0.034085 235.264777   0.774   0.4399    
+NovelDay3           -0.007583   0.034386 238.066080  -0.221   0.8257    
+Environ2            -0.220194   0.037351 200.493672  -5.895 1.56e-08 ***
+NovelDay2:Environ2   0.008283   0.050158 189.553693   0.165   0.8690    
+NovelDay3:Environ2   0.096347   0.049599 199.395711   1.943   0.0535 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 Envrn2 ND2:E2
+NovelDay2   -0.508                            
+NovelDay3   -0.508  0.576                     
+Environ2    -0.432  0.495  0.496              
+NvlDy2:Env2  0.320 -0.628 -0.373 -0.738       
+NvlDy3:Env2  0.330 -0.381 -0.645 -0.757  0.559
+Type III Analysis of Variance Table with Kenward-Roger's method
+                  Sum Sq Mean Sq NumDF  DenDF F value  Pr(>F)    
+NovelDay         0.05410 0.02705     2 236.01  1.2278 0.29480    
+Environ          1.87274 1.87274     1 179.81 85.0114 < 2e-16 ***
+NovelDay:Environ 0.10914 0.05457     2 186.09  2.4772 0.08675 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                estimate     SE  df t.ratio p.value
+ NovelDay1 Environ1 - NovelDay2 Environ1 -0.02637 0.0343 235  -0.769  0.9725
+ NovelDay1 Environ1 - NovelDay3 Environ1  0.00758 0.0347 238   0.219  0.9999
+ NovelDay1 Environ1 - NovelDay1 Environ2  0.22019 0.0376 195   5.861  <.0001
+ NovelDay1 Environ1 - NovelDay2 Environ2  0.18554 0.0380 236   4.889  <.0001
+ NovelDay1 Environ1 - NovelDay3 Environ2  0.13143 0.0364 236   3.610  0.0050
+ NovelDay2 Environ1 - NovelDay3 Environ1  0.03395 0.0317 230   1.070  0.8927
+ NovelDay2 Environ1 - NovelDay1 Environ2  0.24657 0.0363 223   6.795  <.0001
+ NovelDay2 Environ1 - NovelDay2 Environ2  0.21191 0.0340 168   6.236  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ2  0.15780 0.0341 233   4.632  0.0001
+ NovelDay3 Environ1 - NovelDay1 Environ2  0.21261 0.0364 229   5.843  <.0001
+ NovelDay3 Environ1 - NovelDay2 Environ2  0.17796 0.0358 228   4.964  <.0001
+ NovelDay3 Environ1 - NovelDay3 Environ2  0.12385 0.0325 188   3.805  0.0026
+ NovelDay1 Environ2 - NovelDay2 Environ2 -0.03465 0.0394 228  -0.879  0.9511
+ NovelDay1 Environ2 - NovelDay3 Environ2 -0.08876 0.0383 230  -2.320  0.1901
+ NovelDay2 Environ2 - NovelDay3 Environ2 -0.05411 0.0379 236  -1.426  0.7112
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ NovelDay * Environ + (1 | AnimalID/CellID)
+   Data: wtNonGoalModInt
+
+REML criterion at convergence: -142.1
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.59222 -0.54910 -0.00236  0.52886  2.07528 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.008403 0.09167 
+ AnimalID        (Intercept) 0.003263 0.05712 
+ Residual                    0.020323 0.14256 
+Number of obs: 232, groups:  CellID:AnimalID, 131; AnimalID, 7
+
+Fixed effects:
+                    Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)          0.58919    0.03526  21.24534  16.709 1.06e-13 ***
+NovelDay2            0.03743    0.04252 195.24633   0.880 0.379746    
+NovelDay3           -0.10243    0.03820 209.07391  -2.681 0.007924 ** 
+Environ2            -0.32267    0.03479 164.31457  -9.274  < 2e-16 ***
+NovelDay2:Environ2   0.07063    0.05211 158.28414   1.355 0.177260    
+NovelDay3:Environ2   0.18443    0.04796 166.96915   3.845 0.000171 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) NvlDy2 NvlDy3 Envrn2 ND2:E2
+NovelDay2   -0.479                            
+NovelDay3   -0.559  0.448                     
+Environ2    -0.542  0.430  0.498              
+NvlDy2:Env2  0.355 -0.730 -0.316 -0.656       
+NvlDy3:Env2  0.402 -0.320 -0.694 -0.731  0.477
+Type III Analysis of Variance Table with Kenward-Roger's method
+                  Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)    
+NovelDay         0.18102 0.09051     2 223.87   4.4532  0.012691 *  
+Environ          2.65582 2.65582     1 155.82 130.6787 < 2.2e-16 ***
+NovelDay:Environ 0.30213 0.15107     2 155.52   7.4331  0.000826 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                                estimate     SE  df t.ratio p.value
+ NovelDay1 Environ1 - NovelDay2 Environ1  -0.0374 0.0430 191  -0.871  0.9529
+ NovelDay1 Environ1 - NovelDay3 Environ1   0.1024 0.0387 206   2.650  0.0901
+ NovelDay1 Environ1 - NovelDay1 Environ2   0.3227 0.0350 157   9.208  <.0001
+ NovelDay1 Environ1 - NovelDay2 Environ2   0.2146 0.0377 187   5.686  <.0001
+ NovelDay1 Environ1 - NovelDay3 Environ2   0.2407 0.0367 208   6.565  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ1   0.1399 0.0430 210   3.255  0.0164
+ NovelDay2 Environ1 - NovelDay1 Environ2   0.3601 0.0422 209   8.533  <.0001
+ NovelDay2 Environ1 - NovelDay2 Environ2   0.2520 0.0396 150   6.370  <.0001
+ NovelDay2 Environ1 - NovelDay3 Environ2   0.2781 0.0416 214   6.681  <.0001
+ NovelDay3 Environ1 - NovelDay1 Environ2   0.2202 0.0371 217   5.942  <.0001
+ NovelDay3 Environ1 - NovelDay2 Environ2   0.1122 0.0368 205   3.048  0.0309
+ NovelDay3 Environ1 - NovelDay3 Environ2   0.1382 0.0329 161   4.201  0.0006
+ NovelDay1 Environ2 - NovelDay2 Environ2  -0.1081 0.0362 209  -2.984  0.0370
+ NovelDay1 Environ2 - NovelDay3 Environ2  -0.0820 0.0353 220  -2.322  0.1895
+ NovelDay2 Environ2 - NovelDay3 Environ2   0.0261 0.0354 213   0.736  0.9772
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 6 estimates 

@@ -1,0 +1,45 @@
+[1] "Percentiles for StimConditionGoalStim"
+        0%        25%        50%        75%       100% 
+0.08795878 0.58736667 1.24390254 2.50976297 7.80094909 
+[1] "Percentiles for StimConditionShamStim"
+         0%         25%         50%         75%        100% 
+ 0.01183358  0.68397989  1.35588050  2.63821496 19.72726872 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: PeakFR ~ StimCondition + (1 | AnimalID/CellID)
+   Data: df
+
+REML criterion at convergence: 3265
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.9759 -0.5961 -0.3151  0.2833  8.1763 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 0.00     0.000   
+ AnimalID        (Intercept) 0.00     0.000   
+ Residual                    4.64     2.154   
+Number of obs: 746, groups:  CellID:AnimalID, 239; AnimalID, 5
+
+Fixed effects:
+              Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)     1.2838     0.2931 744.0000   4.380 1.36e-05 ***
+StimCondition   0.4152     0.1685 744.0000   2.464   0.0139 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+StimConditn -0.963
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+              Sum Sq Mean Sq NumDF DenDF F value  Pr(>F)  
+StimCondition 28.183  28.183     1   744  6.0733 0.01395 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate    SE  df t.ratio p.value
+ StimCondition1 - StimCondition2   -0.415 0.176 250  -2.362  0.0189
+
+Degrees-of-freedom method: kenward-roger 

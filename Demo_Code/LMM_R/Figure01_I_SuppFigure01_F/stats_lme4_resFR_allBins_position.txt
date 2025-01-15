@@ -1,0 +1,249 @@
+[1] "NarrowInt Familiar AllDaysCombined"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ PosBin + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: 22859.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8922 -0.6671 -0.0365  0.5815  3.9620 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 288.1    16.97   
+ AnimalID        (Intercept)   0.0     0.00   
+ Residual                    582.7    24.14   
+Number of obs: 2470, groups:  CellID:AnimalID, 93; AnimalID, 7
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)   -3.150      3.039  627.362  -1.037  0.30030    
+PosBin2        6.588      3.503 2351.876   1.881  0.06009 .  
+PosBin3        6.133      3.503 2351.876   1.751  0.08009 .  
+PosBin4        7.551      3.503 2351.876   2.156  0.03119 *  
+PosBin5        5.954      3.503 2351.876   1.700  0.08928 .  
+PosBin6        4.161      3.503 2351.876   1.188  0.23495    
+PosBin7        7.616      3.503 2351.876   2.175  0.02976 *  
+PosBin8        9.772      3.503 2351.876   2.790  0.00531 ** 
+PosBin9        8.761      3.503 2351.876   2.501  0.01244 *  
+PosBin10       2.213      3.503 2351.876   0.632  0.52753    
+PosBin11      -4.741      3.503 2351.876  -1.354  0.17598    
+PosBin12     -15.349      3.503 2351.876  -4.382 1.23e-05 ***
+PosBin13     -26.167      3.503 2351.876  -7.471 1.12e-13 ***
+PosBin14       3.725      3.503 2351.876   1.064  0.28765    
+PosBin15      15.076      3.503 2351.876   4.304 1.74e-05 ***
+PosBin16      14.579      3.503 2351.876   4.162 3.26e-05 ***
+PosBin17       7.745      3.503 2351.876   2.211  0.02712 *  
+PosBin18       8.051      3.503 2351.876   2.299  0.02161 *  
+PosBin19       9.939      3.503 2351.876   2.838  0.00458 ** 
+PosBin20       9.021      3.503 2351.876   2.576  0.01007 *  
+PosBin21      10.434      3.503 2351.876   2.979  0.00292 ** 
+PosBin22       7.943      3.503 2351.876   2.268  0.02344 *  
+PosBin23       5.472      3.503 2351.876   1.562  0.11835    
+PosBin24       4.286      3.503 2351.876   1.224  0.22124    
+PosBin25       1.200      3.503 2351.876   0.343  0.73183    
+PosBin26      -5.370      3.503 2351.876  -1.533  0.12540    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+       Sum Sq Mean Sq NumDF  DenDF F value    Pr(>F)    
+PosBin 185933  7437.3    25 2351.9  12.763 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast           estimate  SE   df t.ratio p.value
+ PosBin2 - PosBin1      6.59 3.5 2352   1.881  0.7876
+ PosBin3 - PosBin1      6.13 3.5 2352   1.751  0.8759
+ PosBin4 - PosBin1      7.55 3.5 2352   2.156  0.5472
+ PosBin5 - PosBin1      5.95 3.5 2352   1.700  0.9035
+ PosBin6 - PosBin1      4.16 3.5 2352   1.188  0.9988
+ PosBin7 - PosBin1      7.62 3.5 2352   2.175  0.5302
+ PosBin8 - PosBin1      9.77 3.5 2352   2.790  0.1247
+ PosBin9 - PosBin1      8.76 3.5 2352   2.501  0.2687
+ PosBin10 - PosBin1     2.21 3.5 2352   0.632  1.0000
+ PosBin11 - PosBin1    -4.74 3.5 2352  -1.354  0.9921
+ PosBin12 - PosBin1   -15.35 3.5 2352  -4.382  0.0003
+ PosBin13 - PosBin1   -26.17 3.5 2352  -7.471  <.0001
+ PosBin14 - PosBin1     3.73 3.5 2352   1.064  0.9998
+ PosBin15 - PosBin1    15.08 3.5 2352   4.304  0.0004
+ PosBin16 - PosBin1    14.58 3.5 2352   4.162  0.0008
+ PosBin17 - PosBin1     7.74 3.5 2352   2.211  0.4971
+ PosBin18 - PosBin1     8.05 3.5 2352   2.299  0.4208
+ PosBin19 - PosBin1     9.94 3.5 2352   2.838  0.1085
+ PosBin20 - PosBin1     9.02 3.5 2352   2.576  0.2235
+ PosBin21 - PosBin1    10.43 3.5 2352   2.979  0.0705
+ PosBin22 - PosBin1     7.94 3.5 2352   2.268  0.4473
+ PosBin23 - PosBin1     5.47 3.5 2352   1.562  0.9571
+ PosBin24 - PosBin1     4.29 3.5 2352   1.224  0.9981
+ PosBin25 - PosBin1     1.20 3.5 2352   0.343  1.0000
+ PosBin26 - PosBin1    -5.37 3.5 2352  -1.533  0.9649
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: sidak method for 25 tests 
+[1] "WideInt Familiar AllDaysCombined"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ PosBin + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: 10408.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.4047 -0.6715 -0.0412  0.6150  3.1803 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 262.6    16.20   
+ AnimalID        (Intercept) 124.6    11.16   
+ Residual                    668.0    25.85   
+Number of obs: 1118, groups:  CellID:AnimalID, 43; AnimalID, 7
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)  
+(Intercept)   -2.9090     6.4164   13.0823  -0.453   0.6577  
+PosBin2        5.8452     5.5741 1050.0000   1.049   0.2946  
+PosBin3        7.8668     5.5741 1050.0000   1.411   0.1585  
+PosBin4        4.4532     5.5741 1050.0000   0.799   0.4245  
+PosBin5       10.1763     5.5741 1050.0000   1.826   0.0682 .
+PosBin6       11.9643     5.5741 1050.0000   2.146   0.0321 *
+PosBin7        6.8112     5.5741 1050.0000   1.222   0.2220  
+PosBin8        7.5438     5.5741 1050.0000   1.353   0.1762  
+PosBin9       11.2566     5.5741 1050.0000   2.019   0.0437 *
+PosBin10       8.0810     5.5741 1050.0000   1.450   0.1474  
+PosBin11      -2.6486     5.5741 1050.0000  -0.475   0.6348  
+PosBin12      -7.7979     5.5741 1050.0000  -1.399   0.1621  
+PosBin13      -9.7341     5.5741 1050.0000  -1.746   0.0811 .
+PosBin14       2.0107     5.5741 1050.0000   0.361   0.7184  
+PosBin15       5.9775     5.5741 1050.0000   1.072   0.2838  
+PosBin16       2.4164     5.5741 1050.0000   0.433   0.6647  
+PosBin17       7.2878     5.5741 1050.0000   1.307   0.1914  
+PosBin18       5.3433     5.5741 1050.0000   0.959   0.3380  
+PosBin19       1.5396     5.5741 1050.0000   0.276   0.7824  
+PosBin20       0.9954     5.5741 1050.0000   0.179   0.8583  
+PosBin21       2.2729     5.5741 1050.0000   0.408   0.6835  
+PosBin22       8.8268     5.5741 1050.0000   1.584   0.1136  
+PosBin23      11.4247     5.5741 1050.0000   2.050   0.0407 *
+PosBin24       4.6060     5.5741 1050.0000   0.826   0.4088  
+PosBin25      -0.7925     5.5741 1050.0000  -0.142   0.8870  
+PosBin26      -7.1680     5.5741 1050.0000  -1.286   0.1987  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Type III Analysis of Variance Table with Satterthwaite's method
+       Sum Sq Mean Sq NumDF DenDF F value    Pr(>F)    
+PosBin  37166  1486.7    25  1050  2.2254 0.0005225 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast           estimate   SE   df t.ratio p.value
+ PosBin2 - PosBin1     5.845 5.57 1050   1.049  0.9998
+ PosBin3 - PosBin1     7.867 5.57 1050   1.411  0.9866
+ PosBin4 - PosBin1     4.453 5.57 1050   0.799  1.0000
+ PosBin5 - PosBin1    10.176 5.57 1050   1.826  0.8289
+ PosBin6 - PosBin1    11.964 5.57 1050   2.146  0.5573
+ PosBin7 - PosBin1     6.811 5.57 1050   1.222  0.9981
+ PosBin8 - PosBin1     7.544 5.57 1050   1.353  0.9921
+ PosBin9 - PosBin1    11.257 5.57 1050   2.019  0.6727
+ PosBin10 - PosBin1    8.081 5.57 1050   1.450  0.9815
+ PosBin11 - PosBin1   -2.649 5.57 1050  -0.475  1.0000
+ PosBin12 - PosBin1   -7.798 5.57 1050  -1.399  0.9880
+ PosBin13 - PosBin1   -9.734 5.57 1050  -1.746  0.8791
+ PosBin14 - PosBin1    2.011 5.57 1050   0.361  1.0000
+ PosBin15 - PosBin1    5.978 5.57 1050   1.072  0.9998
+ PosBin16 - PosBin1    2.416 5.57 1050   0.433  1.0000
+ PosBin17 - PosBin1    7.288 5.57 1050   1.307  0.9951
+ PosBin18 - PosBin1    5.343 5.57 1050   0.959  1.0000
+ PosBin19 - PosBin1    1.540 5.57 1050   0.276  1.0000
+ PosBin20 - PosBin1    0.995 5.57 1050   0.179  1.0000
+ PosBin21 - PosBin1    2.273 5.57 1050   0.408  1.0000
+ PosBin22 - PosBin1    8.827 5.57 1050   1.584  0.9509
+ PosBin23 - PosBin1   11.425 5.57 1050   2.050  0.6457
+ PosBin24 - PosBin1    4.606 5.57 1050   0.826  1.0000
+ PosBin25 - PosBin1   -0.793 5.57 1050  -0.142  1.0000
+ PosBin26 - PosBin1   -7.168 5.57 1050  -1.286  0.9961
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: sidak method for 25 tests 
+[1] "Pyr Familiar AllDaysCombined"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ PosBin + (1 | AnimalID/CellID)
+   Data: dat
+
+REML criterion at convergence: 107645.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.1742 -0.6420 -0.1839  0.4947  3.8613 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ CellID:AnimalID (Intercept) 373.820  19.334  
+ AnimalID        (Intercept)   7.582   2.753  
+ Residual                    665.572  25.799  
+Number of obs: 11414, groups:  CellID:AnimalID, 407; AnimalID, 7
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)     0.9044     1.9227    15.3606   0.470  0.64470    
+PosBin2        -0.1875     1.7413 10980.7498  -0.108  0.91424    
+PosBin3        -1.3499     1.7413 10980.7498  -0.775  0.43822    
+PosBin4        -0.4375     1.7413 10980.7498  -0.251  0.80163    
+PosBin5        -0.7653     1.7413 10980.7498  -0.440  0.66030    
+PosBin6        -1.1269     1.7413 10980.7498  -0.647  0.51755    
+PosBin7        -3.0191     1.7413 10980.7498  -1.734  0.08298 .  
+PosBin8        -1.6576     1.7413 10980.7498  -0.952  0.34116    
+PosBin9        -0.6432     1.7413 10980.7498  -0.369  0.71186    
+PosBin10        1.1114     1.7413 10980.7498   0.638  0.52332    
+PosBin11        3.9582     1.7413 10980.7498   2.273  0.02304 *  
+PosBin12        5.5375     1.7413 10980.7498   3.180  0.00148 ** 
+PosBin13       16.9862     1.7413 10980.7498   9.755  < 2e-16 ***
+PosBin14       14.8277     1.7413 10980.7498   8.515  < 2e-16 ***
+PosBin15       13.0961     1.7413 10980.7498   7.521 5.87e-14 ***
+PosBin16        9.9200     1.7413 10980.7498   5.697 1.25e-08 ***
+PosBin17        4.2318     1.7413 10980.7498   2.430  0.01511 *  
+PosBin18       -0.3546     1.7413 10980.7498  -0.204  0.83864    
+PosBin19       -2.6920     1.7413 10980.7498  -1.546  0.12215    
+PosBin20       -3.8426     1.7413 10980.7498  -2.207  0.02735 *  
+PosBin21       -3.8498     1.7413 10980.7498  -2.211  0.02707 *  
+PosBin22       -3.1182     1.7413 10980.7498  -1.791  0.07337 .  
+PosBin23       -5.0314     1.7413 10980.7498  -2.889  0.00387 ** 
+PosBin24       -4.5902     1.7413 10980.7498  -2.636  0.00840 ** 
+PosBin25       -4.4863     1.7413 10980.7498  -2.576  0.01000 ** 
+PosBin26       -3.6320     1.7413 10980.7498  -2.086  0.03702 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Type III Analysis of Variance Table with Satterthwaite's method
+       Sum Sq Mean Sq NumDF DenDF F value    Pr(>F)    
+PosBin 418919   16757    25 10981  25.177 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast           estimate   SE  df z.ratio p.value
+ PosBin2 - PosBin1    -0.188 1.74 Inf  -0.108  1.0000
+ PosBin3 - PosBin1    -1.350 1.74 Inf  -0.775  1.0000
+ PosBin4 - PosBin1    -0.437 1.74 Inf  -0.251  1.0000
+ PosBin5 - PosBin1    -0.765 1.74 Inf  -0.440  1.0000
+ PosBin6 - PosBin1    -1.127 1.74 Inf  -0.647  1.0000
+ PosBin7 - PosBin1    -3.019 1.74 Inf  -1.734  0.8852
+ PosBin8 - PosBin1    -1.658 1.74 Inf  -0.952  1.0000
+ PosBin9 - PosBin1    -0.643 1.74 Inf  -0.369  1.0000
+ PosBin10 - PosBin1    1.111 1.74 Inf   0.638  1.0000
+ PosBin11 - PosBin1    3.958 1.74 Inf   2.273  0.4413
+ PosBin12 - PosBin1    5.538 1.74 Inf   3.180  0.0362
+ PosBin13 - PosBin1   16.986 1.74 Inf   9.755  <.0001
+ PosBin14 - PosBin1   14.828 1.74 Inf   8.515  <.0001
+ PosBin15 - PosBin1   13.096 1.74 Inf   7.521  <.0001
+ PosBin16 - PosBin1    9.920 1.74 Inf   5.697  <.0001
+ PosBin17 - PosBin1    4.232 1.74 Inf   2.430  0.3162
+ PosBin18 - PosBin1   -0.355 1.74 Inf  -0.204  1.0000
+ PosBin19 - PosBin1   -2.692 1.74 Inf  -1.546  0.9615
+ PosBin20 - PosBin1   -3.843 1.74 Inf  -2.207  0.4999
+ PosBin21 - PosBin1   -3.850 1.74 Inf  -2.211  0.4962
+ PosBin22 - PosBin1   -3.118 1.74 Inf  -1.791  0.8511
+ PosBin23 - PosBin1   -5.031 1.74 Inf  -2.889  0.0922
+ PosBin24 - PosBin1   -4.590 1.74 Inf  -2.636  0.1899
+ PosBin25 - PosBin1   -4.486 1.74 Inf  -2.576  0.2219
+ PosBin26 - PosBin1   -3.632 1.74 Inf  -2.086  0.6104
+
+Degrees-of-freedom method: asymptotic 
+P value adjustment: sidak method for 25 tests 

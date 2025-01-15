@@ -1,0 +1,81 @@
+---
+title: "proportion_RampUnits_lme4"
+output: html_document
+date: "2023-01-23"
+---
+
+```{r}
+#install.packages("lme4")
+#install.packages("nlme")
+#install.packages("ICC")
+#install.packages("pbkrtest")
+#install.packages("emmeans")
+#install.packages("car")
+#install.packages("sjPlot")
+```
+
+
+```{r}
+### load the libraries
+rm(list = setdiff(ls(), lsf.str()))
+
+library(nlme)
+library(lme4)
+library(lmerTest)
+library(emmeans)
+
+
+### Read the ROC data
+```
+
+
+```{r}
+#load MATLAB output (in table format in .txt) file in R
+foldN = "."
+
+tblFilename = paste0(foldN, "/TableData_propUnits.txt")
+txtFilename = paste0(foldN, "/stats_lme4_wt_All.txt") #create .txt file to save LMM outputs 
+
+mydata = read.csv(tblFilename, head=T)
+
+wt = mydata
+wt$AnimalID = as.factor(wt$AnimalID)
+wt$NovelDay = as.factor(wt$NovelDay)
+wt$Environ = as.factor(wt$Enviro)
+
+obj.lmer1=lmerTest::lmer(DataY ~ NovelDay*Environ*CellType + (1|AnimalID), data=wt)
+
+sink(txtFilename)
+print(summary(obj.lmer1))
+print(anova(obj.lmer1, ddf="Kenward-Roger"))
+print(contrast(emmeans(obj.lmer1, specs=c("NovelDay","Environ","CellType")), "pairwise", adjust = "tukey"))
+sink() 
+
+
+
+celltypes = unique(mydata$Celltype)
+
+for (x in celltypes) 
+{ 
+  
+  ## specify data baed on genotype and condition of interest
+  wt <- mydata[mydata$CellType == x & !is.nan(mydata$Proportion), ]
+  
+  #Do not forget to factor the animal IDs
+  wt$AnimalID = as.factor(wt$AnimalID)
+  wt$NovelDay = as.factor(wt$NovelDay)
+  wt$Environment = as.factor(wt$Environ)
+  
+  
+  ################## Linear Mixed-effects Model ###########################
+  
+  #### WT mice 
+  obj.lmer2=lmerTest::lmer(Proportion ~ NovelDay*Environ + (1|AnimalID), data=wt)
+  sink(paste0(foldN, "/stats_lme4_wt_", x, ".txt"))
+  print(summary(obj.lmer2))
+  print(anova(obj.lmer2, ddf="Kenward-Roger"))
+  print(contrast(emmeans(obj.lmer2, specs=c("NovelDay","Environ")), "pairwise", adjust = "tukey"))
+  sink()  # returns output to the console
+}
+```
+

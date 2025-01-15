@@ -1,0 +1,161 @@
+[1] "stimLickR - Fam"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_famGS
+
+REML criterion at convergence: 2.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5040 -0.6572 -0.0131  0.7454  2.5609 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.006052 0.07779 
+ Residual             0.056804 0.23834 
+Number of obs: 831, groups:  AnimalID, 6
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)   
+(Intercept)      0.17979    0.03302   4.89076   5.445  0.00304 **
+StimIntensity2   0.02537    0.03504 824.48972   0.724  0.46933   
+StimIntensity3   0.05327    0.03685 824.62426   1.446  0.14867   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.066       
+StmIntnsty3 -0.064  0.072
+Type III Analysis of Variance Table with Satterthwaite's method
+               Sum Sq  Mean Sq NumDF  DenDF F value Pr(>F)
+StimIntensity 0.14061 0.070305     2 824.44  1.2377 0.2906
+ contrast                        estimate     SE  df t.ratio p.value
+ StimIntensity1 - StimIntensity2  -0.0254 0.0351 825  -0.724  0.7496
+ StimIntensity1 - StimIntensity3  -0.0533 0.0369 825  -1.445  0.3184
+ StimIntensity2 - StimIntensity3  -0.0279 0.0490 823  -0.570  0.8363
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "stimLickR - Nov1"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_nov
+
+REML criterion at convergence: 66.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.3207 -0.4903 -0.1300  0.5701  2.7214 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.00000  0.0000  
+ Residual             0.06333  0.2517  
+Number of obs: 651, groups:  AnimalID, 6
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)      0.05801    0.01396 648.00000   4.156 3.68e-05 ***
+StimIntensity2  -0.04951    0.02411 648.00000  -2.054   0.0404 *  
+StimIntensity3   0.01651    0.02420 648.00000   0.682   0.4953    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.579       
+StmIntnsty3 -0.577  0.334
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+               Sum Sq Mean Sq NumDF DenDF F value  Pr(>F)  
+StimIntensity 0.40059  0.2003     2   648  3.1625 0.04298 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ contrast                        estimate     SE  df t.ratio p.value
+ StimIntensity1 - StimIntensity2   0.0495 0.0241 646   2.053  0.1008
+ StimIntensity1 - StimIntensity3  -0.0165 0.0242 645  -0.682  0.7741
+ StimIntensity2 - StimIntensity3  -0.0660 0.0279 646  -2.367  0.0478
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "stimLickR - Nov2"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_nov
+
+REML criterion at convergence: 8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.3713 -0.5920 -0.0859  0.6633  2.5526 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ AnimalID (Intercept) 0.0002032 0.01426 
+ Residual             0.0577448 0.24030 
+Number of obs: 724, groups:  AnimalID, 6
+
+Fixed effects:
+                 Estimate Std. Error         df t value Pr(>|t|)  
+(Intercept)      0.035787   0.014217  13.274516   2.517   0.0254 *
+StimIntensity2  -0.001133   0.021915 718.505093  -0.052   0.9588  
+StimIntensity3   0.016397   0.021725 719.204441   0.755   0.4506  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.524       
+StmIntnsty3 -0.529  0.342
+Type III Analysis of Variance Table with Satterthwaite's method
+                Sum Sq  Mean Sq NumDF  DenDF F value Pr(>F)
+StimIntensity 0.039182 0.019591     2 718.61  0.3393 0.7124
+ contrast                        estimate     SE  df t.ratio p.value
+ StimIntensity1 - StimIntensity2  0.00113 0.0219 718   0.052  0.9985
+ StimIntensity1 - StimIntensity3 -0.01640 0.0218 719  -0.754  0.7314
+ StimIntensity2 - StimIntensity3 -0.01753 0.0250 718  -0.700  0.7634
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+[1] "stimLickR - Nov3"
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: DataY ~ StimIntensity + (1 | AnimalID)
+   Data: pv_nov
+
+REML criterion at convergence: 40.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.4451 -0.5959 -0.0078  0.5885  2.9074 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ AnimalID (Intercept) 0.001551 0.03939 
+ Residual             0.059520 0.24397 
+Number of obs: 950, groups:  AnimalID, 6
+
+Fixed effects:
+                Estimate Std. Error        df t value Pr(>|t|)  
+(Intercept)      0.03814    0.01985   6.95731   1.921   0.0964 .
+StimIntensity2  -0.03769    0.01938 942.57664  -1.945   0.0520 .
+StimIntensity3  -0.01773    0.01935 942.72391  -0.916   0.3599  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) StmIn2
+StmIntnsty2 -0.331       
+StmIntnsty3 -0.331  0.340
+Type III Analysis of Variance Table with Satterthwaite's method
+               Sum Sq Mean Sq NumDF  DenDF F value Pr(>F)
+StimIntensity 0.22962 0.11481     2 942.49   1.929 0.1459
+ contrast                        estimate     SE  df t.ratio p.value
+ StimIntensity1 - StimIntensity2   0.0377 0.0194 943   1.945  0.1267
+ StimIntensity1 - StimIntensity3   0.0177 0.0194 943   0.916  0.6304
+ StimIntensity2 - StimIntensity3  -0.0200 0.0222 942  -0.897  0.6421
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 3 estimates 
