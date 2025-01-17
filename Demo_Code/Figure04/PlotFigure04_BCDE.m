@@ -300,16 +300,32 @@ positive_A = length(coactive_novgoal_low); positive_B = length(coactive_novsham_
 % Observed data
 n1 = positive_A; N1 = total_A;
 n2 = positive_B; N2 = total_B;
-% Pooled estimate of proportion
-p0 = (n1+n2) / (N1+N2);
-% Expected counts under H0 (null hypothesis)
-n10 = N1 * p0;
-n20 = N2 * p0;
-% Chi-square test, by hand
-observed = [n1 N1-n1 n2 N2-n2];
-expected = [n10 N1-n10 n20 N2-n20];
-chi2stat = sum((observed-expected).^2 ./ expected);
-p = 1 - chi2cdf(chi2stat,1)
+% Calculate the observed negatives (O)
+O1 = n1;  % Observed positives in Group A
+O2 = N1 - n1;  % Observed negatives in Group A
+O3 = n2;  % Observed positives in Group B
+O4 = N2 - n2;  % Observed negatives in Group B
+% Calculate expected counts (E) under the null hypothesis
+total = N1 + N2;  % Total number of observations
+% Expected counts for Group A (positives and negatives)
+E1 = (N1 * (n1 + n2)) / total;  % Expected positives in Group A
+E2 = N1 - E1;  % Expected negatives in Group A
+% Expected counts for Group B (positives and negatives)
+E3 = (N2 * (n1 + n2)) / total;  % Expected positives in Group B
+E4 = N2 - E3;  % Expected negatives in Group B
+% Calculate Chi-square statistic (𝜒²)
+chi2stat = ((O1 - E1)^2 / E1) + ((O2 - E2)^2 / E2) + ((O3 - E3)^2 / E3) + ((O4 - E4)^2 / E4);
+% Calculate degrees of freedom (df) for a 2x2 table
+df = 1;  % For a 2x2 table, df = (rows - 1) * (columns - 1)
+p = 1 - chi2cdf(chi2stat, df);  
+phi = sqrt(chi2stat / total);
+
+fprintf('Chi-square Statistic (𝜒²): %.4f\n', chi2stat);
+fprintf('Degrees of Freedom (df): %d\n', df);
+fprintf('p-value: %.4f\n', p);
+fprintf('Effect Size (Phi coefficient): %.4f\n', phi);
+fprintf('Expected Counts: Group A Positives = %.2f, Group A Negatives = %.2f\n', E1, E2);
+fprintf('Expected Counts: Group B Positives = %.2f, Group B Negatives = %.2f\n', E3, E4);
 %% Figure 5D: Ripple power in novel environment (goal stim vs sham stim)
 clear temp v_PV
 %figure; ax = axes('NextPlot','add','Box','off');
