@@ -89,7 +89,7 @@ The folder `Demo_Code/Helpers` contains scripts to generate key intermediate fil
 
 
 ## License
-This code is covered under the Apache 2.0 License. The dataset is covered under the CC BY 4.0 License. 
+This code is covered under the MIT License. The dataset is covered under the CC BY 4.0 License. 
 
 ## GitHub link to Demo_Code and Demo_Figures
 https://github.com/singerlabgt/Inhibitory_Gating_Project.git
