@@ -3,9 +3,12 @@
 The code has been tested on the Windows 11 Operating system. No required non-standard hardware is needed.
 
 ## Installation guide
-- To run MATLAB-based figures, a MATLAB environment is needed. The scripts have been tested with MATLAB R2023a. 
-    - Required Add-On: Statistics and Machine Learning Toolbox
-- To run `PlotExtendedDataFigure03_C.ipynb`, a python-based jupyter environment is needed. The code was tested with the conda environment with the following packages
+### 1. MATLAB Environment (for MATLAB-based figures)
+- To run MATLAB-based figures, a MATLAB environment is needed. The scripts have been tested with **MATLAB R2023a**. 
+    - **Required Add-On**: Statistics and Machine Learning Toolbox
+    - **Estimated installation time**: The MATLAB installation process usually takes 5-30 minutes depending on internet speed and system resources.
+### 2. Python Environment (for `PlotExtendedDataFigure03_C.ipynb` notebook)
+- To run `PlotExtendedDataFigure03_C.ipynb`, a python-based jupyter environment is needed. The code was tested with a **Conda environment** with the following packages
     - python=3.11.5
     - jupyter=1.0.0
     - numpy=1.26.0
@@ -15,35 +18,49 @@ The code has been tested on the Windows 11 Operating system. No required non-sta
     - seaborn=0.12.2
     - statannot=0.2.3
 
-    If you are using conda, the conda installation guide can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
-    To create the environment, open the terminal and enter 
-    ```
-    conda create -n PlotExtendedDataFigure03_C python=3.11.5 jupyter numpy=1.26.0 scipy=1.11.3 pandas=2.1.1 matplotlib=3.7.2 seaborn=0.12.2 statannot=0.2.3 -c anaconda -c conda-forge -y
-    ```
-- To run linear-mixed model, an R environment is required. The scripts have been tested with R version 4.2.2. Based on the package requirements, an R version >= 4.1.0 is recommended. The following packages are required (versions should not affect the result)
-    - lme4=1.1.35.1
-    - lmerTest=3.1.3
-    - emmeans=1.8.9
+    If you are using **Conda**, follow these steps:
+    1. **Install Conda** (if not already installed). You can find the installation [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
+    2. **Create the Conda environment** by running the following command in your terminal:
+        ```
+        conda create -n PlotExtendedDataFigure03_C python=3.11.5 jupyter numpy=1.26.0 scipy=1.11.3 pandas=2.1.1 matplotlib=3.7.2 seaborn=0.12.2 statannot=0.2.3 -c anaconda -c conda-forge -y
+        ```
+        **Estimated Installation Time:** This environment setup usually takes 5-10 minutes, depending on your internet speed and system resources.
+    
+    
+### 3. R Environment (for Linear Mixed Model)
+- To run linear-mixed model, an **R environment** is required. The scripts have been tested with **R version 4.2.2**. Based on the package requirements, an R version **>= 4.1.0** is recommended. The following packages are required (versions should not affect the result)
+    - lme4 (v1.1.35.1)
+    - lmerTest (v3.1.3)
+    - emmeans (v1.8.9)
 
-    To install the packages, use the command 
+    To install the packages, run the following command in R:
     ```
-    install.packages("{PACKAGE_NAME}", version='{PACKAGE_VERSION}')
+    install.packages(c("lme4", "lmerTest", "emmeans"))
     ```
+    **Estimated installation time:**: Installing each R package typically takes 1-2 minutes, though it may take longer based on internet speed and system resources.
 
 ## Demo/Instructions for use
-- The source data (doi: 10.6084/m9.figshare.28191596) are shared through [figshare](https://figshare.com/s/d61d3088abbea65dd6ad). Download and unzip `Demo_Data` file and put it at the same directory as Demo_Code. The code scripts will use the data from `Demo_Data`. The spreadsheet `VR_NoveltySpreadsheet.xlsx` contains metadata for each animal and session.
-- To generate the MATLAB-based figures, go to `Demo_Code/{FIGURE_INDEX}`, change `maindir` to manuscript folder and run the script file. The output figures will be saved in `Demo_Figures` with the figure index in the name. For each figure the expected run time should be around 1-5 minutes. 
-- To run `PlotExtendedDataFigure03_C.ipynb`, activate the conda environment with the command 
+### 1. Data Setup:  
+- Download source data (doi: 10.6084/m9.figshare.28191596) are shared through [figshare](https://figshare.com/s/d61d3088abbea65dd6ad). 
+- Unzip `Demo_Data` compressed file and put it at the same directory as `Demo_Code`. The code scripts will use the data from `Demo_Data`. The spreadsheet `VR_NoveltySpreadsheet.xlsx` contains metadata for each animal and session.
+### 2. MATLAB-based figures:
+- Navigate to `Demo_Code/{FIGURE_INDEX}`  
+- Change `maindir` to manuscript folder 
+- Run the script file. The output figures will be saved in `Demo_Figures` with the figure index in the name. 
+  - **Estimated run time:**: For each figure the expected run time should be around 1-5 minutes. 
+### 3. Jupyter notebook (for `PlotExtendedDataFigure03_C.ipynb`)
+-  **Activate the environment:**
     ```
     conda activate PlotExtendedDataFigure03_C
     ```
-    Jupyter notebook can be opened with the command
+- **Launch Jupyter notebook:**
     ```
     jupyter notebook
     ```
-    Then run all the cells to generate the figures. The output figures will be saved in `Demo_Figures` with the figure index in the name. 
-
-- To run the linear mixed model stats, set R working directory to a figure folder under `Demo_Code/LMM_R`, run the R script. The resulting stat test files will be saved in the same folder.
+    Then, open and run all cells in `PlotExtendedDataFigure03_C.ipynb` to generate the figures. Output figures will be saved in the `Demo_Figures` folder with the figure index in the name.
+### 4. Linear Mixed Model (LMM) in R
+- Set R working directory to a figure folder under `Demo_Code/LMM_R`
+- Run the R script. The resulting stat test files will be saved in the same folder.
 
 ## Intermediate files generation
 The folder `Demo_Code/Helpers` contains scripts to generate key intermediate files in `Demo_Data`.

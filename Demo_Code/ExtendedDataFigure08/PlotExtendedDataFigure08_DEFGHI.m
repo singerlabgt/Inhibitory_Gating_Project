@@ -271,6 +271,16 @@ for ii=1:3
     perc_novgoalPyr_shamstim{ii} = numNovGoalPyr_shamstim{ii} ./ numPyr_shamstim{ii} * 100;
 end
 ax = nexttile; box off; hold on;
+% plot individual data points
+jitter = 0.05; 
+for ii = 1:3
+    x_values_jittered = repmat(ii, 5, 1) + jitter * randn(length(perc_novgoalPyr_goalstim{ii}), 1);
+    scatter(ax, reshape(x_values_jittered, [], 1), reshape(perc_novgoalPyr_goalstim{ii}, [], 1), 15, params.colors_goalstim(3,:), 'filled', 'MarkerFaceAlpha', 0.5); legend(ax, 'Location','none')
+    x_values_jittered = repmat(ii, 5, 1) + jitter * randn(length(perc_novgoalPyr_shamstim{ii}), 1);
+    scatter(ax, reshape(x_values_jittered, [], 1), reshape(perc_novgoalPyr_shamstim{ii}, [], 1), 15, params.colors_shamstim(3,:), 'filled', 'MarkerFaceAlpha', 0.5); legend(ax, 'Location','none')
+end
+legend(ax, 'Location','none')
+% plot mean+-errorbar
 meanp = arrayfun( @(x) mean(perc_novgoalPyr_goalstim{x}),1:3);
 err = arrayfun( @(x) std(perc_novgoalPyr_goalstim{x}) ./ sqrt(length(perc_novgoalPyr_goalstim{x})),1:3);
 errorbar(1:3, meanp, err,'LineWidth',2,'Color',params.colors_goalstim(3,:))
@@ -377,6 +387,14 @@ for ii=1:3
 end
 
 ax = nexttile; box off; hold on;
+jitter = 0.05; 
+for ii = 1:3
+    x_values_jittered = repmat(ii, 5, 1) + jitter * randn(length(perc_novNongoalPyr_goalstim{ii}), 1);
+    scatter(ax, reshape(x_values_jittered, [], 1), reshape(perc_novNongoalPyr_goalstim{ii}, [], 1), 15, params.colors_goalstim(3,:), 'filled', 'MarkerFaceAlpha', 0.5); legend(ax, 'Location','none')
+    x_values_jittered = repmat(ii, 5, 1) + jitter * randn(length(perc_novNongoalPyr_shamstim{ii}), 1);
+    scatter(ax, reshape(x_values_jittered, [], 1), reshape(perc_novNongoalPyr_shamstim{ii}, [], 1), 15, params.colors_shamstim(3,:), 'filled', 'MarkerFaceAlpha', 0.5); legend(ax, 'Location','none')
+end
+
 meanp = arrayfun( @(x) mean(perc_novNongoalPyr_goalstim{x}),1:3);
 err = arrayfun( @(x) std(perc_novNongoalPyr_goalstim{x}) ./ sqrt(length(perc_novNongoalPyr_goalstim{x})),1:3);
 errorbar(1:3, meanp, err,'LineWidth',2,'Color',params.colors_goalstim(3,:))
